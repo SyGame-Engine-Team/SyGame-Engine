@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Source\Lib\Datastruct\Array\Array.inl" />
+    <None Include="..\..\..\Source\Lib\Datastruct\Array\RingBuffer.inl" />
+    <None Include="..\..\..\Source\Lib\Datastruct\Cache\CacheMap.inl" />
+    <None Include="..\..\..\Source\Lib\Datastruct\Datastruct.inl" />
+    <None Include="..\..\..\Source\Lib\Datastruct\List\List.inl" />
+    <None Include="..\..\..\Source\Lib\Datastruct\Table\HashMap.inl" />
+    <None Include="..\..\..\Source\Lib\Datastruct\Table\TreeMap.inl" />
+    <None Include="..\..\..\Source\Lib\Datastruct\Tree\AVLTree.inl" />
+    <None Include="..\..\..\Source\Lib\Datastruct\Tree\Heap.inl" />
+    <None Include="..\..\..\Source\Lib\Datastruct\Tree\RedBlackTree.inl" />
+    <None Include="..\..\..\Source\Lib\Datastruct\Tree\SplayTree.inl" />
+    <None Include="..\..\..\Source\Lib\Error\ErrorManager.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Algebra\LCPSolver\LCPSolver.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\BandedMatrix.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystem2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystem3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystemN.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecomposition2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecomposition3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecompositionN.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EulerDecomposition.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\QDUDecomposition.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecomposition2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecomposition3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecompositionN.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Quaternion\ConstrainedQuaternion.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Quaternion\UnConstrainedQuaternion.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Analysis\FunctionBasis\BSplineBasis.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Analysis\Integration\Integrator1.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Analysis\Integration\ODESolverN.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Analysis\Interpolation\InterpolatorBilinear.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Analysis\Interpolation\InterpolatorLinear.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Analysis\Polynomial\Polynomial1.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Analysis\Signal\Transforms.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Formats\Fixed.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Formats\Integer.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Formats\Rational.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Formats\Scalar.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Functions\MathFunction.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\2D\BoundingSurface.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BoundingVolume.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BVAABox.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BVSphere.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\Curve2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurveChain2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurveLibrary\BSplinePatch2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurvePatch2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\Curve3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveChain3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\BezierPatch3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\BSplinePatch3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\CubicPolynomialPatch3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\NaturalSplineChain3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\NURBSPatch3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\PolynomialPatch3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\TCBSplineChain3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurvePatch3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\2D\IntersectConvexPolygon2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\2D\Linear\IntersectSegment2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Linear\IntersectSegment3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneLine3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneRay3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneSegment3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Line3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Ray3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Segment3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector1.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifold2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifold3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifoldN.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshPolygonManifold3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshPolygonManifoldN.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshQuadManifold3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshQuadManifoldN.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshTriangleManifold3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshTriangleManifoldN.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeature.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeatureDeclarations.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeatureKey.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Vertices\MeshVertexManifold2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Vertices\MeshVertexManifoldN.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Graphs\MeshDeformableGraph.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Graphs\MeshVoronoiGraph.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshGraph.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshManifold2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshManifold3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\ConvexPolygon2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Line2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Ray2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Segment2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Box.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Cylinder.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Line3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Ray3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Segment3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Circle3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\ConvexPolygon3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Plane.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Quad3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Triangle3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Sphere.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Tetrahedron.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Torus.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\TruncatedCone.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\AABoxTree.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\GaussTree.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\KDTree.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\Octree.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\ImplicitSurface.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\ParametricSurface.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\BSplineSurface.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\NURBSSurface.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\QuadricSurface.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Hash\Hashing.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Hash\MD5.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Hash\SHA1.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Random\Random.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Color\Color3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Color\Color4.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Complex\Complex.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Discrete\Box3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Discrete\Offset2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Discrete\Offset3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Discrete\Point2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Discrete\Point3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Discrete\Rectangle2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix4.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Matrix\MatrixN.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Quaternion\Quaternion.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord1.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord4.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Transform\Transform2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Transform\Transform3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Vector\Vector2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Vector\Vector3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Vector\Vector4.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Vector\VectorN.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex2.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex3.inl" />
+    <None Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex4.inl" />
+    <None Include="..\..\..\Source\Lib\Memory\Allocators\BreakAllocator.inl" />
+    <None Include="..\..\..\Source\Lib\Memory\Allocators\HeapAllocator.inl" />
+    <None Include="..\..\..\Source\Lib\Memory\Allocators\MemoryAllocator.inl" />
+    <None Include="..\..\..\Source\Lib\Memory\Allocators\PoolAllocator.inl" />
+    <None Include="..\..\..\Source\Lib\Memory\Allocators\StackAllocator.inl" />
+    <None Include="..\..\..\Source\Lib\Memory\MemoryManager.inl" />
+    <None Include="..\..\..\Source\Lib\Object\Object.inl" />
+    <None Include="..\..\..\Source\Lib\Object\Patterns\Manager.inl" />
+    <None Include="..\..\..\Source\Lib\Object\Patterns\StaticData.inl" />
+    <None Include="..\..\..\Source\Lib\Object\Patterns\VirtualHolder.inl" />
+    <None Include="..\..\..\Source\Lib\Object\Reflection\Class.inl" />
+    <None Include="..\..\..\Source\Lib\Object\Reflection\Definitions.inl" />
+    <None Include="..\..\..\Source\Lib\Object\Reflection\Function.inl" />
+    <None Include="..\..\..\Source\Lib\Object\Reflection\Member.inl" />
+    <None Include="..\..\..\Source\Lib\Object\Reflection\Method.inl" />
+    <None Include="..\..\..\Source\Lib\Object\Reflection\Reflect.inl" />
+    <None Include="..\..\..\Source\Lib\Object\Reflection\Type.inl" />
+    <None Include="..\..\..\Source\Lib\Object\Reflection\UnionStruct.inl" />
+    <None Include="..\..\..\Source\Lib\Object\SmartPointer\SmartPointer.inl" />
+    <None Include="..\..\..\Source\Lib\String\PatternMatching.inl" />
+    <None Include="..\..\..\Source\Lib\UID\IDAllocator.inl" />
+    <None Include="..\..\..\Source\Lib\UID\UID.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Array\Array.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Array\RingBuffer.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Cache\CacheMap.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Datastruct.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\List\List.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Table\HashMap.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Table\TreeMap.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Tree\AVLTree.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Tree\Heap.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Tree\RedBlackTree.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Tree\SplayTree.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Error\ErrorManager.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\LCPSolver\LCPSolver.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\BandedMatrix.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystem2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystem3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystemN.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecomposition2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecomposition3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecompositionN.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EulerDecomposition.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\QDUDecomposition.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecomposition2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecomposition3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecompositionN.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Quaternion\ConstrainedQuaternion.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Quaternion\UnConstrainedQuaternion.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Analysis\FunctionBasis\BSplineBasis.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Analysis\Integration\Integrator1.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Analysis\Integration\ODESolverN.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Analysis\Interpolation\InterpolatorBilinear.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Analysis\Interpolation\InterpolatorLinear.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Analysis\Polynomial\Polynomial1.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Analysis\Signal\Transforms.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Formats\Fixed.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Formats\Integer.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Formats\Rational.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Formats\Scalar.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Functions\MathFunction.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\2D\BoundingSurface.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BoundingVolume.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BVAABox.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BVSphere.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\Curve2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurveChain2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurveLibrary\BSplinePatch2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurvePatch2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\Curve3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveChain3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\BezierPatch3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\BSplinePatch3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\CubicPolynomialPatch3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\NaturalSplineChain3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\NURBSPatch3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\PolynomialPatch3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\TCBSplineChain3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurvePatch3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\2D\IntersectConvexPolygon2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\2D\Linear\IntersectSegment2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Linear\IntersectSegment3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneLine3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneRay3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneSegment3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Line3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Ray3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Segment3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector1.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifold2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifold3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifoldN.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshPolygonManifold3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshPolygonManifoldN.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshQuadManifold3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshQuadManifoldN.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshTriangleManifold3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshTriangleManifoldN.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeature.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeatureDeclarations.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeatureKey.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Vertices\MeshVertexManifold2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Vertices\MeshVertexManifoldN.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Graphs\MeshDeformableGraph.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Graphs\MeshVoronoiGraph.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshGraph.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshManifold2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshManifold3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\ConvexPolygon2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Line2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Ray2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Segment2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Box.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Cylinder.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Line3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Ray3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Segment3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Circle3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\ConvexPolygon3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Plane.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Quad3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Triangle3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Sphere.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Tetrahedron.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Torus.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\TruncatedCone.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\AABoxTree.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\GaussTree.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\KDTree.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\Octree.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\ImplicitSurface.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\ParametricSurface.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\BSplineSurface.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\NURBSSurface.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\QuadricSurface.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Hash\Hashing.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Hash\MD5.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Hash\SHA1.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Random\Random.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Color\Color3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Color\Color4.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Complex\Complex.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Discrete\Box3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Discrete\Offset2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Discrete\Offset3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Discrete\Point2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Discrete\Point3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Discrete\Rectangle2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix4.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Matrix\MatrixN.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Quaternion\Quaternion.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord1.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord4.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Transform\Transform2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Transform\Transform3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Vector\Vector2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Vector\Vector3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Vector\Vector4.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Vector\VectorN.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex2.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex3.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex4.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Memory\Allocators\BreakAllocator.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Memory\Allocators\HeapAllocator.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Memory\Allocators\MemoryAllocator.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Memory\Allocators\PoolAllocator.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Memory\Allocators\StackAllocator.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Memory\MemoryManager.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Object\Object.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Object\Patterns\Manager.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Object\Patterns\StaticData.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Object\Patterns\VirtualHolder.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Class.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Definitions.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Function.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Macros.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Member.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Method.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Reflect.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Type.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\UnionStruct.h" />
+    <ClInclude Include="..\..\..\Source\Lib\Object\SmartPointer\SmartPointer.h" />
+    <ClInclude Include="..\..\..\Source\Lib\String\PatternMatching.h" />
+    <ClInclude Include="..\..\..\Source\Lib\UID\IDAllocator.h" />
+    <ClInclude Include="..\..\..\Source\Lib\UID\UID.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\Lib\Datastruct\Cache\CacheMap.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Datastruct\Datastruct.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Error\ErrorManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\LCPSolver\LCPSolver.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\BandedMatrix.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystem2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystem3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystemN.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecomposition2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecomposition3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecompositionN.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EulerDecomposition.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\QDUDecomposition.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecomposition2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecomposition3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecompositionN.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Quaternion\ConstrainedQuaternion.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Quaternion\UnConstrainedQuaternion.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Analysis\FunctionBasis\BSplineBasis.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Analysis\Integration\Integrator1.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Analysis\Integration\ODESolverN.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Analysis\Interpolation\InterpolatorBilinear.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Analysis\Interpolation\InterpolatorLinear.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Analysis\Polynomial\Polynomial1.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Analysis\Signal\Transforms.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Formats\Fixed.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Formats\Scalar.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Functions\MathFunction.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\2D\BoundingSurface.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BoundingVolume.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BVAABox.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BVSphere.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\Curve2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurveChain2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurveLibrary\BSplinePatch2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurvePatch2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\Curve3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveChain3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\BezierPatch3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\BSplinePatch3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\CubicPolynomialPatch3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\NaturalSplineChain3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\NURBSPatch3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\PolynomialPatch3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\TCBSplineChain3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurvePatch3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\2D\IntersectConvexPolygon2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\2D\Linear\IntersectSegment2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Linear\IntersectSegment3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneLine3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneRay3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneSegment3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Line3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Ray3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Segment3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector1.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifold2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifold3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifoldN.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshPolygonManifold3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshPolygonManifoldN.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshQuadManifold3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshQuadManifoldN.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshTriangleManifold3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshTriangleManifoldN.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeature.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeatureDeclarations.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeatureKey.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Vertices\MeshVertexManifold2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Vertices\MeshVertexManifoldN.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Graphs\MeshDeformableGraph.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Graphs\MeshVoronoiGraph.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshGraph.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshManifold2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshManifold3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\ConvexPolygon2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Line2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Ray2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Segment2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Box.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Cylinder.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Line3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Ray3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Segment3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Circle3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\ConvexPolygon3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Plane.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Quad3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Triangle3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Sphere.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Tetrahedron.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Torus.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\TruncatedCone.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\AABoxTree.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\GaussTree.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\KDTree.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\Octree.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\ImplicitSurface.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\ParametricSurface.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\BSplineSurface.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\NURBSSurface.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\QuadricSurface.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Hash\Hashing.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Hash\MD5.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Hash\SHA1.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Random\Random.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Color\Color3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Color\Color4.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Complex\Complex.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Discrete\Box3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Discrete\Offset2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Discrete\Offset3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Discrete\Point2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Discrete\Point3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Discrete\Rectangle2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix4.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Matrix\MatrixN.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Quaternion\Quaternion.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord1.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord4.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Transform\Transform2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Transform\Transform3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Vector\Vector2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Vector\Vector3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Vector\Vector4.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Vector\VectorN.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex2.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex3.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex4.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Memory\Allocators\BreakAllocator.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Memory\Allocators\HeapAllocator.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Memory\Allocators\MemoryAllocator.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Memory\Allocators\PoolAllocator.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Memory\Allocators\StackAllocator.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Memory\MemoryManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Object\Object.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Object\Patterns\Manager.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\Class.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\Definitions.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\Function.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\Member.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\Method.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\Reflect.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\Type.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\UnionStruct.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\Object\SmartPointer\SmartPointer.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\String\PatternMatching.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\UID\IDAllocator.cpp" />
+    <ClCompile Include="..\..\..\Source\Lib\UID\UID.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ThirdParty\ThirdParty.vcxproj">
+      <Project>{23ca2c0f-ce2b-41d7-852e-20818a199273}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FB45E172-D5EC-46E3-AF6E-0BBA3DE412F0}</ProjectGuid>
+    <RootNamespace>Lib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)../../Source/Lib;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <SourcePath>$(SolutionDir)../../Source/Lib;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExcludePath>$(ExcludePath)</ExcludePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

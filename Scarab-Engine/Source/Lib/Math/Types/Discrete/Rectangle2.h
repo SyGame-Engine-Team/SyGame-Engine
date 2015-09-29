@@ -1,0 +1,69 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Lib/Math/Types/Discrete/Rectangle2.h
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : Discrete 2D rectangular region
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header prelude
+#ifndef SCARAB_LIB_MATH_TYPES_DISCRETE_RECTANGLE2_H
+#define SCARAB_LIB_MATH_TYPES_DISCRETE_RECTANGLE2_H
+
+/////////////////////////////////////////////////////////////////////////////////
+// Includes
+#include "Point2.h"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Constants definitions
+
+/////////////////////////////////////////////////////////////////////////////////
+// The Rectangle2 class
+class Rectangle2
+{
+public:
+	// Constructors
+	Rectangle2(); // uninitialized
+	Rectangle2(Int left, Int top, Int right, Int down);
+	Rectangle2(const Int vTopLeft[2], const Int vDownRight[2]);
+	Rectangle2(const Point2 & vTopLeft, UInt width, UInt height);
+	Rectangle2(const Point2 & vTopLeft, const Point2 & vDownRight);
+	Rectangle2(const Rectangle2 & rhs);
+	~Rectangle2();
+
+	// Assignment operator
+	inline Rectangle2 & operator=(const Rectangle2 & rhs);
+
+	// Boolean operations
+	inline Bool operator==(const Rectangle2 & rhs) const;
+	inline Bool operator!=(const Rectangle2 & rhs) const;
+
+	// Methods
+	inline UInt Width() const;
+	inline UInt Height() const;
+	inline Bool Contains(const Point2 & vPt) const; // top-left filling convention
+
+	// Data
+	Point2 TopLeft;   // Both points are included in the rectangle,
+	Point2 DownRight; // width & height are returned accordingly
+};
+
+/////////////////////////////////////////////////////////////////////////////////
+// Backward Includes (Inlines & Templates)
+#include "Rectangle2.inl"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header end
+#endif // SCARAB_LIB_MATH_TYPES_DISCRETE_RECTANGLE2_H

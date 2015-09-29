@@ -1,0 +1,71 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Engine/Modeling/Primitives/Linear/MeshSegment.h
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : Primitives : Linear, Segment
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header prelude
+#ifndef SCARAB_ENGINE_MODELING_PRIMITIVES_LINEAR_MESHSEGMENT_H
+#define SCARAB_ENGINE_MODELING_PRIMITIVES_LINEAR_MESHSEGMENT_H
+
+/////////////////////////////////////////////////////////////////////////////////
+// Includes
+#include "../../../../Lib/Math/Geometry/Primitives/3D/Linear/Segment3.h"
+
+#include "../../../Rendering/Resources/Mesh.h"
+
+//#include "../../MeshGraphs/MeshManifold2.h"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Constants definitions
+
+/////////////////////////////////////////////////////////////////////////////////
+// The MeshSegment class
+class MeshSegment : public LineListMesh
+{
+public:
+    // Segment : Mesh  = 2 vertices, 1 line, 2 indices
+    //           Graph = 2 vertices, 1 edge
+    MeshSegment( const Segment3 & vSegment, GPUInputLayout * pIL );
+    virtual ~MeshSegment();
+
+    // Geometry access
+    inline const Segment3 & GetGeometry() const;
+
+    // Graph generator
+    //static Void GenerateGraph( MeshManifold2 * outGraph );
+
+    // Dynamic update support
+    inline Void UpdateGeometry( const Segment3 & vSegment, GPUDeferredContext * pContext = NULL );
+
+protected:
+    // Dynamic update support
+    virtual Void _Update( GPUDeferredContext * pContext = NULL );
+
+    // Geometry data
+    Segment3 m_vSegment;
+};
+
+/////////////////////////////////////////////////////////////////////////////////
+// Backward Includes (Inlines & Templates)
+#include "MeshSegment.inl"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header end
+#endif // SCARAB_ENGINE_MODELING_PRIMITIVES_LINEAR_MESHSEGMENT_H
+
+

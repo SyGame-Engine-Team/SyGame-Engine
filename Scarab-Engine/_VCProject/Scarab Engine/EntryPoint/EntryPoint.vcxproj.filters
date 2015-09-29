@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SourceFiles">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="SourceFiles\Debug">
+      <UniqueIdentifier>{a39625b7-063a-4334-814e-3e532815f995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Framework">
+      <UniqueIdentifier>{70caf26d-0fc1-4789-8850-805f9f235d1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Framework\Graphics">
+      <UniqueIdentifier>{fc924334-1971-4951-97cd-23421e172915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Framework\Interface">
+      <UniqueIdentifier>{d967cf50-f6d2-42c2-af90-dbc67131e46d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\EntryPoint\MainSelector.h">
+      <Filter>SourceFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\EntryPoint\Debug\DebugMain.h">
+      <Filter>SourceFiles\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\EntryPoint\Framework\Graphics\GraphicsManager.h">
+      <Filter>SourceFiles\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\EntryPoint\Framework\Interface\InterfaceManager.h">
+      <Filter>SourceFiles\Framework\Interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Source\EntryPoint\MainSelector.inl">
+      <Filter>SourceFiles</Filter>
+    </None>
+    <None Include="..\..\..\Source\EntryPoint\Debug\DebugMain.inl">
+      <Filter>SourceFiles\Debug</Filter>
+    </None>
+    <None Include="..\..\..\Source\EntryPoint\Framework\Graphics\GraphicsManager.inl">
+      <Filter>SourceFiles\Framework\Graphics</Filter>
+    </None>
+    <None Include="..\..\..\Source\EntryPoint\Framework\Interface\InterfaceManager.inl">
+      <Filter>SourceFiles\Framework\Interface</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\EntryPoint\MainSelector.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\EntryPoint\Debug\DebugMain.cpp">
+      <Filter>SourceFiles\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\EntryPoint\Framework\Graphics\GraphicsManager.cpp">
+      <Filter>SourceFiles\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\EntryPoint\Framework\Interface\InterfaceManager.cpp">
+      <Filter>SourceFiles\Framework\Interface</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

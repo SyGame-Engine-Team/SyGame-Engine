@@ -1,0 +1,44 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : EntryPoint/SimpleRPG/Interface/SkillBookView.inl
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : SimpleRPG, Interface : SkillBookView
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None.
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// SkillBookViewModel implementation
+inline UInt SkillBookViewModel::GetPageSize() const {
+    return m_iPageSize;
+}
+inline UInt SkillBookViewModel::GetPageCount() const {
+    return m_iPageCount;
+}
+inline UInt SkillBookViewModel::GetCurrentPage() const {
+    return m_iCurrentPage;
+}
+
+inline UInt SkillBookViewModel::GetSkillCount( UInt iPage ) const {
+    Assert( iPage < m_iPageCount );
+    return m_arrSkillPages[iPage].iSkillCount;
+}
+inline SkillInstance * SkillBookViewModel::GetSkill( UInt iPage, UInt iIndex ) const {
+    Assert( iPage < m_iPageCount );
+    if ( iIndex < m_arrSkillPages[iPage].iSkillCount )
+        return m_arrSkillPages[iPage].arrSkills[iIndex];
+    return NULL;
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+// SkillBookView implementation

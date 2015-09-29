@@ -1,0 +1,70 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Engine/Physics/CollisionDetection/BroadPhase/BroadPhase.h
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : Broad-Phase layer for collision detection
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header prelude
+#ifndef SCARAB_ENGINE_PHYSICS_COLLISIONDETECTION_BROADPHASE_BROADPHASE_H
+#define SCARAB_ENGINE_PHYSICS_COLLISIONDETECTION_BROADPHASE_BROADPHASE_H
+
+/////////////////////////////////////////////////////////////////////////////////
+// Includes
+#include "../../../../Lib/Math/Geometry/BoundingShapes/3D/BVAABox.h"
+
+#include "PairManager.h"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Constants definitions
+
+/////////////////////////////////////////////////////////////////////////////////
+// The BroadPhase class
+class BroadPhase
+{
+public:
+    BroadPhase( PairListener * pPairListener );
+    virtual ~BroadPhase();
+
+    // Broadphase operations
+    virtual Bool HasProxy( IslandNode * pNode ) const = 0;
+
+    virtual Void CreateProxy( IslandNode * pNode, const BVAABox & aabProxy ) = 0;
+    virtual Void DestroyProxy( IslandNode * pNode ) = 0;
+
+    virtual Void UpdateProxy( IslandNode * pNode, const BVAABox & aabProxy ) = 0;
+
+    inline Void Commit();
+
+    // Synchronous listener
+    inline Void SwitchListener( PairListener * pPairListener );
+
+    // Asynchronous queries
+    inline Bool IsPair( IslandNode * pNodeA, IslandNode * pNodeB ) const;
+
+protected:
+    // Pair manager
+    PairManager * m_pPairManager;
+};
+
+/////////////////////////////////////////////////////////////////////////////////
+// Backward Includes (Inlines & Templates)
+#include "BroadPhase.inl"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header end
+#endif // SCARAB_ENGINE_PHYSICS_COLLISIONDETECTION_BROADPHASE_BROADPHASE_H
+

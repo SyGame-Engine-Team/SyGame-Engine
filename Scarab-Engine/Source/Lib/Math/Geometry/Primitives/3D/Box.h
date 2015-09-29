@@ -1,0 +1,74 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Lib/Math/Geometry/Primitives/3D/Box.h
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : Primitives 3D : Box
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header prelude
+#ifndef SCARAB_LIB_MATH_GEOMETRY_PRIMITIVES_3D_BOX_H
+#define SCARAB_LIB_MATH_GEOMETRY_PRIMITIVES_3D_BOX_H
+
+/////////////////////////////////////////////////////////////////////////////////
+// Includes
+#include "../../../../Error/ErrorManager.h"
+
+#include "../../../Types/Vector/Vector3.h"
+#include "../../../Types/Vertex/Vertex3.h"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Constants definitions
+
+/////////////////////////////////////////////////////////////////////////////////
+// The TBox class
+template<typename Real>
+class TBox
+{
+public:
+	TBox(); // uninitialized
+	TBox( const TVertex3<Real> & vCenter, const TVector3<Real> & vExtents );
+	TBox( const TBox<Real> & rhs );
+	~TBox();
+
+	// Operators
+	inline TBox<Real> & operator=( const TBox<Real> & rhs );
+
+    // Helper methods
+    inline Bool TestInclusion( const TVertex3<Real> & vPoint ) const;
+
+    inline TVertex3<Real> ClosestPoint( const TVertex3<Real> & vPoint ) const;
+    inline Real Distance( const TVertex3<Real> & vPoint ) const;
+
+    Void ExtractVertices( TVertex3<Real> outVertices[8] ) const;
+
+    // Center/Extents representation
+	TVertex3<Real> Center;
+	TVector3<Real> Extents;
+};
+
+// Explicit instanciation
+typedef TBox<Float> Boxf;
+typedef TBox<Double> Boxd;
+typedef TBox<Scalar> Box;
+
+/////////////////////////////////////////////////////////////////////////////////
+// Backward Includes (Inlines & Templates)
+#include "Box.inl"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header end
+#endif // SCARAB_LIB_MATH_GEOMETRY_PRIMITIVES_3D_BOX_H
+

@@ -1,0 +1,60 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Engine/Application/Instance/BaseApplication.cpp
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : Abstract base class for all applications
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None.
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Includes
+#include "BaseApplication.h"
+
+#include "../ApplicationManager.h"
+
+/////////////////////////////////////////////////////////////////////////////////
+// BaseApplication implementation
+
+/////////////////////////////////////////////////////////////////////////////////
+
+BaseApplication::BaseApplication()
+{
+    // nothing to do
+}
+BaseApplication::~BaseApplication()
+{
+    // nothing to do
+}
+
+Void BaseApplication::_SetCreateDestroy( CreateAppCallback pfCreate, DestroyAppCallback pfDestroy )
+{
+    ApplicationManager::CreateApp = pfCreate;
+    ApplicationManager::DestroyApp = pfDestroy;
+}
+
+Void BaseApplication::_SetRunCallback( RunCallback pfRun )
+{
+    ApplicationFn->RunFunction = pfRun;
+}
+Void BaseApplication::_SetAppInstance( BaseApplication * pAppInstance )
+{
+    ApplicationFn->m_pAppInstance = pAppInstance;
+}
+
+Void BaseApplication::_DeleteAppInstance()
+{
+    Delete( ApplicationFn->m_pAppInstance );
+    ApplicationFn->m_pAppInstance = NULL;
+}
+

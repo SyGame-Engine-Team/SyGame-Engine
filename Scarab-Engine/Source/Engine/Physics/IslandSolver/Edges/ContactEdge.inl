@@ -1,0 +1,61 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Engine/Physics/IslandSolver/Edges/ContactEdge.inl
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : Island edges : Contact
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// ContactEdge implementation
+inline IslandEdgeType ContactEdge::GetType() const {
+    return ISLAND_EDGE_CONTACT;
+}
+
+inline BodyNode * ContactEdge::GetBodyA() const {
+    return (BodyNode*)( GetNodeA() );
+}
+inline BodyNode * ContactEdge::GetBodyB() const {
+    return (BodyNode*)( GetNodeB() );
+}
+
+inline NarrowPhase * ContactEdge::GetNarrowPhase() const {
+    return m_pNarrowPhase;
+}
+
+inline const ContactManifold * ContactEdge::GetManifold() const {
+    return m_pContactManifold;
+}
+inline ContactManifold * ContactEdge::GetManifold() {
+    return m_pContactManifold;
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+//// ContactRigidRigidEdge implementation
+//inline ContactEdgeType ContactRigidRigidEdge::GetContactType() const {
+//    return CONTACT_EDGE_RIGID_RIGID;
+//}
+//
+///////////////////////////////////////////////////////////////////////////////////
+//// ContactRigidSoftEdge implementation
+//inline ContactEdgeType ContactRigidSoftEdge::GetContactType() const {
+//    return CONTACT_EDGE_RIGID_SOFT;
+//}
+//
+///////////////////////////////////////////////////////////////////////////////////
+//// ContactSoftSoftEdge implementation
+//inline ContactEdgeType ContactSoftSoftEdge::GetContactType() const {
+//    return CONTACT_EDGE_SOFT_SOFT;
+//}
+

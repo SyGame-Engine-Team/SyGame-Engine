@@ -1,0 +1,71 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Engine/World/Indoor/WorldPortal.h
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : The Portal class, traditional convex room separator
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header prelude
+#ifndef SCARAB_ENGINE_WORLD_INDOOR_WORLDPORTAL_H
+#define SCARAB_ENGINE_WORLD_INDOOR_WORLDPORTAL_H
+
+/////////////////////////////////////////////////////////////////////////////////
+// Includes
+#include "WorldPortalCuller.h"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Constants definitions
+
+    // Prototypes
+class WorldConvexRoom;
+
+/////////////////////////////////////////////////////////////////////////////////
+// The WorldPortal class
+class WorldPortal
+{
+public:
+    WorldPortal( const Vertex3 * arrPolygon, UInt iPolygonSize );
+    virtual ~WorldPortal();
+
+    // Polygon access
+    inline UInt GetPolygonSize() const;
+    inline const Vertex3 & GetPolygon( UInt iVertex ) const;
+
+    Bool Closed;              // Default = true
+    WorldConvexRoom * Target; // Default = NULL
+
+private:
+    // Helper
+    Bool _ComputeReducedFrustum( Scalar outReducedFrustum[FRUSTRUM_COUNT], const WorldPortalCuller & wPortalCuller );
+
+    // Culling support
+    friend class WorldConvexRoom;
+    Void _OnVisibleGroup( WorldPortalCuller & wPortalCuller, Bool bNoCull );
+
+    // Portal polygon
+    UInt m_iPolygonSize;
+    Vertex3 * m_arrWorldPolygon; // Planar, CCW from source room
+    Plane m_vWorldPlane;         // Normal toward source room
+};
+
+/////////////////////////////////////////////////////////////////////////////////
+// Backward Includes (Inlines & Templates)
+#include "WorldPortal.inl"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header end
+#endif // SCARAB_ENGINE_WORLD_INDOOR_WORLDPORTAL_H
+

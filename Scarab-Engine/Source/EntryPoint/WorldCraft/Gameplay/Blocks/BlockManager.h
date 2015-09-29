@@ -1,0 +1,73 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : EntryPoint/WorldCraft/Gameplay/Blocks/BlockManager.h
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : WorldCraft, Blocks : BlockManager
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None.
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header prelude
+#ifndef SCARAB_ENTRYPOINT_WORLDCRAFT_GAMEPLAY_BLOCKS_BLOCKMANAGER_H
+#define SCARAB_ENTRYPOINT_WORLDCRAFT_GAMEPLAY_BLOCKS_BLOCKMANAGER_H
+
+/////////////////////////////////////////////////////////////////////////////////
+// Includes
+#include "../../../../Engine/Application/ApplicationManager.h"
+
+#include "Block.h"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Constants definitions
+#define BlockFn BlockManager::GetInstancePtr()
+
+/////////////////////////////////////////////////////////////////////////////////
+// The BlockManager class
+class BlockManager : public Manager<BlockManager>
+{
+public:
+    inline static const GChar * GetName();
+    inline static const GChar * GetMemoryBudget();
+
+protected:
+    friend class Manager<BlockManager>;
+    BlockManager();
+    virtual ~BlockManager();
+
+public:
+    Void Initialize();
+    Void Cleanup();
+
+    // Block database
+    inline Block * GetBlock( const BlockID & hBlockID ) const;
+
+    inline Void RegisterBlock( Block * pBlock );
+    inline Block * UnRegisterBlock( const BlockID & hBlockID );
+
+private:
+    // Block database
+    inline static Int _Compare_BlockID( const BlockID & rLeft, const BlockID & rRight, Void * pUserData );
+    typedef TreeMap<BlockID,Block*> BlockMap;
+    BlockMap m_mapBlockDB;
+};
+
+/////////////////////////////////////////////////////////////////////////////////
+// Backward Includes (Inlines & Templates)
+#include "BlockManager.inl"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header end
+#endif // SCARAB_ENTRYPOINT_WORLDCRAFT_GAMEPLAY_BLOCKS_BLOCKMANAGER_H
+
+

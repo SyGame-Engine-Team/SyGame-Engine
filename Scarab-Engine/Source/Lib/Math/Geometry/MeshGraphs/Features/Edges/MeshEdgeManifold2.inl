@@ -1,0 +1,54 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Lib/Math/Geometry/MeshGraphs/Features/Edges/MeshEdgeManifold2.inl
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : Edge features : 2-Manifold MeshGraphs
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// MeshEdgeManifold2 implementation
+inline MeshEdgeType MeshEdgeManifold2::GetEdgeType() const {
+    return MESH_EDGE_MANIFOLD2;
+}
+
+//inline MeshEdge * MeshEdgeManifold2::Downgrade() {
+//    return NULL;
+//}
+
+/////////////////////////////////////////////////////////////////////////////////
+// MeshEdgeManifold2_V implementation
+inline MeshLinkageType MeshEdgeManifold2_V::GetLinkageType() const {
+    return MESH_LINKAGE_V;
+}
+
+_MESHFEATURE_IMPLEMENT_INLINES_2( MeshEdgeManifold2_V, Vertex, Vertices )
+
+/////////////////////////////////////////////////////////////////////////////////
+// MeshEdgeManifold2_E implementation
+inline MeshLinkageType MeshEdgeManifold2_E::GetLinkageType() const {
+    return MESH_LINKAGE_E;
+}
+
+_MESHFEATURE_IMPLEMENT_INLINES_2( MeshEdgeManifold2_E, Edge, Edges )
+
+/////////////////////////////////////////////////////////////////////////////////
+// MeshEdgeManifold2_VE implementation
+inline MeshLinkageType MeshEdgeManifold2_VE::GetLinkageType() const {
+    return MESH_LINKAGE_VE;
+}
+
+_MESHFEATURE_IMPLEMENT_INLINES_2( MeshEdgeManifold2_VE, Vertex, Vertices )
+_MESHFEATURE_IMPLEMENT_INLINES_2( MeshEdgeManifold2_VE, Edge, Edges )
+

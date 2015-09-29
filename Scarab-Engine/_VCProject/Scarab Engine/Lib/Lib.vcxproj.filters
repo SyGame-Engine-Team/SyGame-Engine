@@ -1,0 +1,1704 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SourceFiles">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="SourceFiles\Datastruct">
+      <UniqueIdentifier>{f72e4e6d-2999-4544-9cd0-cd15bcd2c461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Error">
+      <UniqueIdentifier>{05ec38cf-185a-431b-9b62-b3b93e6b708e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math">
+      <UniqueIdentifier>{fc0dd6bb-7fc6-4611-a993-0ec2da8ca53c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Memory">
+      <UniqueIdentifier>{2d80dac9-afec-4c6b-97bb-78c75dfad698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\String">
+      <UniqueIdentifier>{574f0b05-ca6d-4958-a902-0c68976e148e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Object">
+      <UniqueIdentifier>{c822eabe-3ffe-4636-9a64-6db819a5c038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\UUID">
+      <UniqueIdentifier>{c1d56896-9013-45e8-a1b3-6f7fb4fd8b63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Datastruct\Array">
+      <UniqueIdentifier>{1f2c59b4-ff8a-4ec8-9877-ebe7ea2b5f7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Datastruct\Cache">
+      <UniqueIdentifier>{364156f9-5ad4-4276-81d5-05b5fb470731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Datastruct\List">
+      <UniqueIdentifier>{75cdbad1-f7f9-467d-bd3b-18f897cf2eab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Datastruct\Tree">
+      <UniqueIdentifier>{3e5a4c46-3b3c-4672-ab18-37668a565a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Datastruct\Table">
+      <UniqueIdentifier>{c4995a37-f08a-4f2c-9624-c7059ab23aae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Memory\Allocators">
+      <UniqueIdentifier>{799c75f0-5fb5-45d2-9b9c-a4f60c8e7043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Object\SmartPointer">
+      <UniqueIdentifier>{f9c73b1c-9e16-456e-9a2a-8c7810ea85c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Object\Patterns">
+      <UniqueIdentifier>{a52b9b79-b11e-4a28-8ff6-086f56ff3dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Object\Reflection">
+      <UniqueIdentifier>{e4e30f0e-db17-4ee2-a02b-1186efc3bf49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Algebra">
+      <UniqueIdentifier>{944efea7-6f34-48da-bc1b-548adc5678e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Analysis">
+      <UniqueIdentifier>{e60b4947-2e03-4e2e-a79f-0699b6e2f690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Formats">
+      <UniqueIdentifier>{72d1156c-3443-422f-aecd-4c8c1c0ef3dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Functions">
+      <UniqueIdentifier>{de7ccad0-f4c8-4ebc-b1c5-5a50f4593916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry">
+      <UniqueIdentifier>{bf4ba526-49aa-48e8-840b-9c817437d69e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Hash">
+      <UniqueIdentifier>{1a4c020a-652d-4727-8583-2541b13bcc04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Types">
+      <UniqueIdentifier>{9fbbdb78-5284-4f88-82b8-6d91e419552e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Random">
+      <UniqueIdentifier>{0b69a824-2da2-4f8e-9427-65b3041d7179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Algebra\LCPSolver">
+      <UniqueIdentifier>{bf150e40-b724-410b-9c9c-8d9f84edfb8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Algebra\LinearSystem">
+      <UniqueIdentifier>{2ec68b7a-2d25-4ae7-bab2-523d9e9bd213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Algebra\Matrix">
+      <UniqueIdentifier>{5d9d46e8-e0be-4d5c-8c90-9eab2dbbd454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Algebra\Quaternion">
+      <UniqueIdentifier>{51acc69f-443e-40e4-b5d6-0ba563f4b366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Analysis\FunctionBasis">
+      <UniqueIdentifier>{2c9587d9-53c2-4ec9-823e-bc34b63b5d0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Analysis\Integration">
+      <UniqueIdentifier>{4604f48e-8244-4626-8474-acd55216c872}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Analysis\Interpolation">
+      <UniqueIdentifier>{3db77561-1728-4876-8ebf-ba42c20ff549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Analysis\Polynomial">
+      <UniqueIdentifier>{567b7b48-2c06-4c6b-ad56-9ab514854361}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Types\Color">
+      <UniqueIdentifier>{4e27fb53-a2ed-405d-8156-bddee78c73aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Types\Discrete">
+      <UniqueIdentifier>{f731660b-204e-4a18-b840-eeca99e66a73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Types\Matrix">
+      <UniqueIdentifier>{cf76ebe6-088e-4b9b-bc10-b2ebb9325d3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Types\Vertex">
+      <UniqueIdentifier>{53b694c6-7b1b-4ff1-b346-95189d3915cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Types\Vector">
+      <UniqueIdentifier>{5a56728b-4c66-4334-8dc1-d43a02eeb340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Types\Transform">
+      <UniqueIdentifier>{0a1039f9-1644-4424-b928-f06aa39893c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Types\TextureCoord">
+      <UniqueIdentifier>{a69e86c9-f0d3-40e8-9fa7-c7813fc60aae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Types\Quaternion">
+      <UniqueIdentifier>{55a3e4b9-6ebd-4aed-a2a7-d5441253972f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\BoundingShapes">
+      <UniqueIdentifier>{c9a3c054-4afa-49c0-bd8a-fb1d7fbe9183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Curves">
+      <UniqueIdentifier>{d3205289-2e31-429b-83e7-2b2a827e27bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Intersection">
+      <UniqueIdentifier>{3230e555-3da5-448c-9e14-d817114c8502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\MeshGraphs">
+      <UniqueIdentifier>{6fcfb2c4-9a47-4ec8-bae7-f3e8039c97ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Surfaces">
+      <UniqueIdentifier>{cfc09629-c001-4069-8262-22cacb63af23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\SpacePartitions">
+      <UniqueIdentifier>{ff958241-4597-49ea-8338-b80c1283b466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Primitives">
+      <UniqueIdentifier>{c290ec74-b678-4722-bcef-e66aa22c5d48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\BoundingShapes\2D">
+      <UniqueIdentifier>{7d890aec-9f04-4ab6-81f7-046a80aacff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\BoundingShapes\3D">
+      <UniqueIdentifier>{190afe99-ffc4-45a4-96fe-c9bbae078921}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Curves\2D">
+      <UniqueIdentifier>{4768ceee-1882-4da4-a6de-887382db8956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Curves\3D">
+      <UniqueIdentifier>{4f204535-e29d-4be9-8005-9bb035704f5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Curves\2D\CurveLibrary">
+      <UniqueIdentifier>{006100b6-1084-4c6a-ac29-eb5e4364aa1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Curves\3D\CurveLibrary">
+      <UniqueIdentifier>{b58d6474-5de9-4bf3-afed-ea9669fce8ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Intersection\2D">
+      <UniqueIdentifier>{dcd893fe-c38e-41aa-b237-156d7680707e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Intersection\3D">
+      <UniqueIdentifier>{fb3965dd-590a-4d9d-9ecc-69b4ac03f812}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Intersection\2D\Linear">
+      <UniqueIdentifier>{96a97342-ec1d-415a-ad74-2813736dcaf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Intersection\3D\Linear">
+      <UniqueIdentifier>{7ec5d7fd-e746-414b-b537-28146d4a0530}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Intersection\3D\Planar">
+      <UniqueIdentifier>{02f573e8-a7cf-4728-8c98-afbf1b43b06b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\MeshGraphs\Features">
+      <UniqueIdentifier>{42040009-6466-4bf8-bda2-f7c65dee657c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\MeshGraphs\Graphs">
+      <UniqueIdentifier>{a6344a3a-ccf3-4846-a23c-8507074091df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\MeshGraphs\Features\Edges">
+      <UniqueIdentifier>{7ba65e32-89bf-43b9-9847-a1f0abac7e75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\MeshGraphs\Features\Facets">
+      <UniqueIdentifier>{11bbb43b-3df5-41e1-a710-acc6b6a517f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\MeshGraphs\Features\Vertices">
+      <UniqueIdentifier>{728ed20f-6287-49f8-830f-18c8b02ba6fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Primitives\2D">
+      <UniqueIdentifier>{9ce694d8-decb-4536-83c4-ca4658d40aea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Primitives\3D">
+      <UniqueIdentifier>{bd29bd53-fae9-429c-938c-fc3780006cdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Primitives\2D\Linear">
+      <UniqueIdentifier>{c3104024-3f04-4632-a819-66226e86ef55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Primitives\3D\Linear">
+      <UniqueIdentifier>{f85a6ebe-617e-4582-a57a-eea8bab39a00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Primitives\3D\Planar">
+      <UniqueIdentifier>{1d6d4098-d237-4cde-bef1-062f11adc6fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Geometry\Surfaces\SurfaceLibrary">
+      <UniqueIdentifier>{0fd0a0fa-5acf-4ee8-a8fa-ea4d51d19b73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Analysis\Signal">
+      <UniqueIdentifier>{f9e4b46f-4dbd-4256-826a-c77f9a68dd1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles\Math\Types\Complex">
+      <UniqueIdentifier>{ce157bec-f07d-4827-a2f6-04ca04b9bfd6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Source\Lib\Datastruct\Array\RingBuffer.inl">
+      <Filter>SourceFiles\Datastruct\Array</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Datastruct\Array\Array.inl">
+      <Filter>SourceFiles\Datastruct\Array</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Datastruct\Cache\CacheMap.inl">
+      <Filter>SourceFiles\Datastruct\Cache</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Datastruct\List\List.inl">
+      <Filter>SourceFiles\Datastruct\List</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Datastruct\Table\HashMap.inl">
+      <Filter>SourceFiles\Datastruct\Table</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Datastruct\Table\TreeMap.inl">
+      <Filter>SourceFiles\Datastruct\Table</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Datastruct\Tree\AVLTree.inl">
+      <Filter>SourceFiles\Datastruct\Tree</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Datastruct\Tree\Heap.inl">
+      <Filter>SourceFiles\Datastruct\Tree</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Datastruct\Tree\RedBlackTree.inl">
+      <Filter>SourceFiles\Datastruct\Tree</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Datastruct\Tree\SplayTree.inl">
+      <Filter>SourceFiles\Datastruct\Tree</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Datastruct\Datastruct.inl">
+      <Filter>SourceFiles\Datastruct</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Error\ErrorManager.inl">
+      <Filter>SourceFiles\Error</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Memory\Allocators\BreakAllocator.inl">
+      <Filter>SourceFiles\Memory\Allocators</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Memory\Allocators\HeapAllocator.inl">
+      <Filter>SourceFiles\Memory\Allocators</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Memory\Allocators\MemoryAllocator.inl">
+      <Filter>SourceFiles\Memory\Allocators</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Memory\Allocators\PoolAllocator.inl">
+      <Filter>SourceFiles\Memory\Allocators</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Memory\Allocators\StackAllocator.inl">
+      <Filter>SourceFiles\Memory\Allocators</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Memory\MemoryManager.inl">
+      <Filter>SourceFiles\Memory</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Object\Patterns\Manager.inl">
+      <Filter>SourceFiles\Object\Patterns</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Object\Patterns\StaticData.inl">
+      <Filter>SourceFiles\Object\Patterns</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Object\Patterns\VirtualHolder.inl">
+      <Filter>SourceFiles\Object\Patterns</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Object\Reflection\Class.inl">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Object\Reflection\Definitions.inl">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Object\Reflection\Function.inl">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Object\Reflection\Member.inl">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Object\Reflection\Method.inl">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Object\Reflection\Reflect.inl">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Object\Reflection\Type.inl">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Object\Reflection\UnionStruct.inl">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Object\SmartPointer\SmartPointer.inl">
+      <Filter>SourceFiles\Object\SmartPointer</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Object\Object.inl">
+      <Filter>SourceFiles\Object</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\String\PatternMatching.inl">
+      <Filter>SourceFiles\String</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\UID\IDAllocator.inl">
+      <Filter>SourceFiles\UUID</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\UID\UID.inl">
+      <Filter>SourceFiles\UUID</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Algebra\LCPSolver\LCPSolver.inl">
+      <Filter>SourceFiles\Math\Algebra\LCPSolver</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\BandedMatrix.inl">
+      <Filter>SourceFiles\Math\Algebra\LinearSystem</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystem2.inl">
+      <Filter>SourceFiles\Math\Algebra\LinearSystem</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystem3.inl">
+      <Filter>SourceFiles\Math\Algebra\LinearSystem</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystemN.inl">
+      <Filter>SourceFiles\Math\Algebra\LinearSystem</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecomposition2.inl">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecomposition3.inl">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecompositionN.inl">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EulerDecomposition.inl">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\QDUDecomposition.inl">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecomposition2.inl">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecomposition3.inl">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecompositionN.inl">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Quaternion\ConstrainedQuaternion.inl">
+      <Filter>SourceFiles\Math\Algebra\Quaternion</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Algebra\Quaternion\UnConstrainedQuaternion.inl">
+      <Filter>SourceFiles\Math\Algebra\Quaternion</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Analysis\FunctionBasis\BSplineBasis.inl">
+      <Filter>SourceFiles\Math\Analysis\FunctionBasis</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Analysis\Integration\Integrator1.inl">
+      <Filter>SourceFiles\Math\Analysis\Integration</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Analysis\Integration\ODESolverN.inl">
+      <Filter>SourceFiles\Math\Analysis\Integration</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Analysis\Interpolation\InterpolatorLinear.inl">
+      <Filter>SourceFiles\Math\Analysis\Interpolation</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Analysis\Interpolation\InterpolatorBilinear.inl">
+      <Filter>SourceFiles\Math\Analysis\Interpolation</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Analysis\Polynomial\Polynomial1.inl">
+      <Filter>SourceFiles\Math\Analysis\Polynomial</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Formats\Rational.inl">
+      <Filter>SourceFiles\Math\Formats</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Formats\Scalar.inl">
+      <Filter>SourceFiles\Math\Formats</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Formats\Fixed.inl">
+      <Filter>SourceFiles\Math\Formats</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Formats\Integer.inl">
+      <Filter>SourceFiles\Math\Formats</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Functions\MathFunction.inl">
+      <Filter>SourceFiles\Math\Functions</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Hash\SHA1.inl">
+      <Filter>SourceFiles\Math\Hash</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Hash\Hashing.inl">
+      <Filter>SourceFiles\Math\Hash</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Hash\MD5.inl">
+      <Filter>SourceFiles\Math\Hash</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Random\Random.inl">
+      <Filter>SourceFiles\Math\Random</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Color\Color3.inl">
+      <Filter>SourceFiles\Math\Types\Color</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Color\Color4.inl">
+      <Filter>SourceFiles\Math\Types\Color</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Discrete\Offset2.inl">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Discrete\Point2.inl">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Discrete\Rectangle2.inl">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix2.inl">
+      <Filter>SourceFiles\Math\Types\Matrix</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix3.inl">
+      <Filter>SourceFiles\Math\Types\Matrix</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix4.inl">
+      <Filter>SourceFiles\Math\Types\Matrix</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Matrix\MatrixN.inl">
+      <Filter>SourceFiles\Math\Types\Matrix</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Quaternion\Quaternion.inl">
+      <Filter>SourceFiles\Math\Types\Quaternion</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord1.inl">
+      <Filter>SourceFiles\Math\Types\TextureCoord</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord2.inl">
+      <Filter>SourceFiles\Math\Types\TextureCoord</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord3.inl">
+      <Filter>SourceFiles\Math\Types\TextureCoord</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord4.inl">
+      <Filter>SourceFiles\Math\Types\TextureCoord</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Transform\Transform2.inl">
+      <Filter>SourceFiles\Math\Types\Transform</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Transform\Transform3.inl">
+      <Filter>SourceFiles\Math\Types\Transform</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Vector\Vector3.inl">
+      <Filter>SourceFiles\Math\Types\Vector</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Vector\Vector4.inl">
+      <Filter>SourceFiles\Math\Types\Vector</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Vector\VectorN.inl">
+      <Filter>SourceFiles\Math\Types\Vector</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Vector\Vector2.inl">
+      <Filter>SourceFiles\Math\Types\Vector</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex3.inl">
+      <Filter>SourceFiles\Math\Types\Vertex</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex4.inl">
+      <Filter>SourceFiles\Math\Types\Vertex</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex2.inl">
+      <Filter>SourceFiles\Math\Types\Vertex</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BVSphere.inl">
+      <Filter>SourceFiles\Math\Geometry\BoundingShapes\3D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BoundingVolume.inl">
+      <Filter>SourceFiles\Math\Geometry\BoundingShapes\3D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BVAABox.inl">
+      <Filter>SourceFiles\Math\Geometry\BoundingShapes\3D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\2D\BoundingSurface.inl">
+      <Filter>SourceFiles\Math\Geometry\BoundingShapes\2D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurveLibrary\BSplinePatch2.inl">
+      <Filter>SourceFiles\Math\Geometry\Curves\2D\CurveLibrary</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurvePatch2.inl">
+      <Filter>SourceFiles\Math\Geometry\Curves\2D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\Curve2.inl">
+      <Filter>SourceFiles\Math\Geometry\Curves\2D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurveChain2.inl">
+      <Filter>SourceFiles\Math\Geometry\Curves\2D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\BezierPatch3.inl">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\BSplinePatch3.inl">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\CubicPolynomialPatch3.inl">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\NaturalSplineChain3.inl">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\NURBSPatch3.inl">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\PolynomialPatch3.inl">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\TCBSplineChain3.inl">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\Curve3.inl">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveChain3.inl">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurvePatch3.inl">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\2D\Linear\IntersectSegment2.inl">
+      <Filter>SourceFiles\Math\Geometry\Intersection\2D\Linear</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\2D\IntersectConvexPolygon2.inl">
+      <Filter>SourceFiles\Math\Geometry\Intersection\2D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Linear\IntersectSegment3.inl">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Linear</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Ray3.inl">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Segment3.inl">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneLine3.inl">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneRay3.inl">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneSegment3.inl">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Line3.inl">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector3.inl">
+      <Filter>SourceFiles\Math\Geometry\Intersection</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector1.inl">
+      <Filter>SourceFiles\Math\Geometry\Intersection</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector2.inl">
+      <Filter>SourceFiles\Math\Geometry\Intersection</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifold3.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Edges</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifoldN.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Edges</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifold2.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Edges</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshQuadManifold3.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshQuadManifoldN.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshTriangleManifold3.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshTriangleManifoldN.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshPolygonManifold3.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshPolygonManifoldN.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Vertices\MeshVertexManifoldN.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Vertices</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Vertices\MeshVertexManifold2.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Vertices</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeature.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeatureDeclarations.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeatureKey.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Graphs\MeshVoronoiGraph.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Graphs</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Graphs\MeshDeformableGraph.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Graphs</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshManifold3.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshGraph.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshManifold2.inl">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Ray2.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\2D\Linear</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Segment2.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\2D\Linear</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Line2.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\2D\Linear</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\ConvexPolygon2.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\2D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Segment3.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Linear</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Line3.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Linear</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Ray3.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Linear</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Circle3.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Planar</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\ConvexPolygon3.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Planar</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Plane.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Planar</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Quad3.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Planar</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Triangle3.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Planar</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Cylinder.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Sphere.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Tetrahedron.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Torus.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\TruncatedCone.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Box.inl">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\GaussTree.inl">
+      <Filter>SourceFiles\Math\Geometry\SpacePartitions</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\KDTree.inl">
+      <Filter>SourceFiles\Math\Geometry\SpacePartitions</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\Octree.inl">
+      <Filter>SourceFiles\Math\Geometry\SpacePartitions</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\AABoxTree.inl">
+      <Filter>SourceFiles\Math\Geometry\SpacePartitions</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\QuadricSurface.inl">
+      <Filter>SourceFiles\Math\Geometry\Surfaces\SurfaceLibrary</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\BSplineSurface.inl">
+      <Filter>SourceFiles\Math\Geometry\Surfaces\SurfaceLibrary</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\NURBSSurface.inl">
+      <Filter>SourceFiles\Math\Geometry\Surfaces\SurfaceLibrary</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\ParametricSurface.inl">
+      <Filter>SourceFiles\Math\Geometry\Surfaces</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\ImplicitSurface.inl">
+      <Filter>SourceFiles\Math\Geometry\Surfaces</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Analysis\Signal\Transforms.inl">
+      <Filter>SourceFiles\Math\Analysis\Signal</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Complex\Complex.inl">
+      <Filter>SourceFiles\Math\Types\Complex</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Discrete\Box3.inl">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Discrete\Offset3.inl">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </None>
+    <None Include="..\..\..\Source\Lib\Math\Types\Discrete\Point3.inl">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Array\Array.h">
+      <Filter>SourceFiles\Datastruct\Array</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Array\RingBuffer.h">
+      <Filter>SourceFiles\Datastruct\Array</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Cache\CacheMap.h">
+      <Filter>SourceFiles\Datastruct\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\List\List.h">
+      <Filter>SourceFiles\Datastruct\List</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Table\HashMap.h">
+      <Filter>SourceFiles\Datastruct\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Table\TreeMap.h">
+      <Filter>SourceFiles\Datastruct\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Tree\AVLTree.h">
+      <Filter>SourceFiles\Datastruct\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Tree\Heap.h">
+      <Filter>SourceFiles\Datastruct\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Tree\RedBlackTree.h">
+      <Filter>SourceFiles\Datastruct\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Tree\SplayTree.h">
+      <Filter>SourceFiles\Datastruct\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Datastruct\Datastruct.h">
+      <Filter>SourceFiles\Datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Error\ErrorManager.h">
+      <Filter>SourceFiles\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Memory\Allocators\BreakAllocator.h">
+      <Filter>SourceFiles\Memory\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Memory\Allocators\HeapAllocator.h">
+      <Filter>SourceFiles\Memory\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Memory\Allocators\MemoryAllocator.h">
+      <Filter>SourceFiles\Memory\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Memory\Allocators\PoolAllocator.h">
+      <Filter>SourceFiles\Memory\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Memory\Allocators\StackAllocator.h">
+      <Filter>SourceFiles\Memory\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Memory\MemoryManager.h">
+      <Filter>SourceFiles\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Object\Patterns\Manager.h">
+      <Filter>SourceFiles\Object\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Object\Patterns\StaticData.h">
+      <Filter>SourceFiles\Object\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Object\Patterns\VirtualHolder.h">
+      <Filter>SourceFiles\Object\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Class.h">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Definitions.h">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Function.h">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Macros.h">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Member.h">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Method.h">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Reflect.h">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\Type.h">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Object\Reflection\UnionStruct.h">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Object\SmartPointer\SmartPointer.h">
+      <Filter>SourceFiles\Object\SmartPointer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Object\Object.h">
+      <Filter>SourceFiles\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\String\PatternMatching.h">
+      <Filter>SourceFiles\String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\UID\IDAllocator.h">
+      <Filter>SourceFiles\UUID</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\UID\UID.h">
+      <Filter>SourceFiles\UUID</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\LCPSolver\LCPSolver.h">
+      <Filter>SourceFiles\Math\Algebra\LCPSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\BandedMatrix.h">
+      <Filter>SourceFiles\Math\Algebra\LinearSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystem2.h">
+      <Filter>SourceFiles\Math\Algebra\LinearSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystem3.h">
+      <Filter>SourceFiles\Math\Algebra\LinearSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystemN.h">
+      <Filter>SourceFiles\Math\Algebra\LinearSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecomposition2.h">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecomposition3.h">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecompositionN.h">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EulerDecomposition.h">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\QDUDecomposition.h">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecomposition2.h">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecomposition3.h">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecompositionN.h">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Quaternion\ConstrainedQuaternion.h">
+      <Filter>SourceFiles\Math\Algebra\Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Algebra\Quaternion\UnConstrainedQuaternion.h">
+      <Filter>SourceFiles\Math\Algebra\Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Analysis\FunctionBasis\BSplineBasis.h">
+      <Filter>SourceFiles\Math\Analysis\FunctionBasis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Analysis\Integration\Integrator1.h">
+      <Filter>SourceFiles\Math\Analysis\Integration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Analysis\Integration\ODESolverN.h">
+      <Filter>SourceFiles\Math\Analysis\Integration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Analysis\Interpolation\InterpolatorBilinear.h">
+      <Filter>SourceFiles\Math\Analysis\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Analysis\Interpolation\InterpolatorLinear.h">
+      <Filter>SourceFiles\Math\Analysis\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Analysis\Polynomial\Polynomial1.h">
+      <Filter>SourceFiles\Math\Analysis\Polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Formats\Fixed.h">
+      <Filter>SourceFiles\Math\Formats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Formats\Integer.h">
+      <Filter>SourceFiles\Math\Formats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Formats\Rational.h">
+      <Filter>SourceFiles\Math\Formats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Formats\Scalar.h">
+      <Filter>SourceFiles\Math\Formats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Functions\MathFunction.h">
+      <Filter>SourceFiles\Math\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Hash\Hashing.h">
+      <Filter>SourceFiles\Math\Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Hash\MD5.h">
+      <Filter>SourceFiles\Math\Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Hash\SHA1.h">
+      <Filter>SourceFiles\Math\Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Random\Random.h">
+      <Filter>SourceFiles\Math\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Color\Color3.h">
+      <Filter>SourceFiles\Math\Types\Color</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Color\Color4.h">
+      <Filter>SourceFiles\Math\Types\Color</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Discrete\Offset2.h">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Discrete\Point2.h">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Discrete\Rectangle2.h">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix2.h">
+      <Filter>SourceFiles\Math\Types\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix3.h">
+      <Filter>SourceFiles\Math\Types\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix4.h">
+      <Filter>SourceFiles\Math\Types\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Matrix\MatrixN.h">
+      <Filter>SourceFiles\Math\Types\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Quaternion\Quaternion.h">
+      <Filter>SourceFiles\Math\Types\Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord4.h">
+      <Filter>SourceFiles\Math\Types\TextureCoord</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord1.h">
+      <Filter>SourceFiles\Math\Types\TextureCoord</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord2.h">
+      <Filter>SourceFiles\Math\Types\TextureCoord</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord3.h">
+      <Filter>SourceFiles\Math\Types\TextureCoord</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Transform\Transform2.h">
+      <Filter>SourceFiles\Math\Types\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Transform\Transform3.h">
+      <Filter>SourceFiles\Math\Types\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Vector\Vector2.h">
+      <Filter>SourceFiles\Math\Types\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Vector\Vector3.h">
+      <Filter>SourceFiles\Math\Types\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Vector\Vector4.h">
+      <Filter>SourceFiles\Math\Types\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Vector\VectorN.h">
+      <Filter>SourceFiles\Math\Types\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex2.h">
+      <Filter>SourceFiles\Math\Types\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex3.h">
+      <Filter>SourceFiles\Math\Types\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex4.h">
+      <Filter>SourceFiles\Math\Types\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BoundingVolume.h">
+      <Filter>SourceFiles\Math\Geometry\BoundingShapes\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BVAABox.h">
+      <Filter>SourceFiles\Math\Geometry\BoundingShapes\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BVSphere.h">
+      <Filter>SourceFiles\Math\Geometry\BoundingShapes\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\2D\BoundingSurface.h">
+      <Filter>SourceFiles\Math\Geometry\BoundingShapes\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurveLibrary\BSplinePatch2.h">
+      <Filter>SourceFiles\Math\Geometry\Curves\2D\CurveLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\Curve2.h">
+      <Filter>SourceFiles\Math\Geometry\Curves\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurveChain2.h">
+      <Filter>SourceFiles\Math\Geometry\Curves\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurvePatch2.h">
+      <Filter>SourceFiles\Math\Geometry\Curves\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\BezierPatch3.h">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\BSplinePatch3.h">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\CubicPolynomialPatch3.h">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\NaturalSplineChain3.h">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\NURBSPatch3.h">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\PolynomialPatch3.h">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\TCBSplineChain3.h">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\Curve3.h">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveChain3.h">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurvePatch3.h">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\2D\Linear\IntersectSegment2.h">
+      <Filter>SourceFiles\Math\Geometry\Intersection\2D\Linear</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\2D\IntersectConvexPolygon2.h">
+      <Filter>SourceFiles\Math\Geometry\Intersection\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Linear\IntersectSegment3.h">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Linear</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneLine3.h">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneRay3.h">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneSegment3.h">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Line3.h">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Ray3.h">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Segment3.h">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector1.h">
+      <Filter>SourceFiles\Math\Geometry\Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector2.h">
+      <Filter>SourceFiles\Math\Geometry\Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector3.h">
+      <Filter>SourceFiles\Math\Geometry\Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifold2.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Edges</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifold3.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Edges</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifoldN.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Edges</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshPolygonManifold3.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshPolygonManifoldN.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshQuadManifold3.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshQuadManifoldN.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshTriangleManifold3.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshTriangleManifoldN.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Vertices\MeshVertexManifold2.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Vertices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Vertices\MeshVertexManifoldN.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Vertices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeature.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeatureDeclarations.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeatureKey.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Graphs\MeshDeformableGraph.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Graphs\MeshVoronoiGraph.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshGraph.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshManifold2.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshManifold3.h">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Line2.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\2D\Linear</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Ray2.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\2D\Linear</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Segment2.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\2D\Linear</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\ConvexPolygon2.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Line3.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Linear</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Ray3.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Linear</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Segment3.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Linear</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Circle3.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\ConvexPolygon3.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Plane.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Quad3.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Triangle3.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Box.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Cylinder.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Sphere.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Tetrahedron.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Torus.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\TruncatedCone.h">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\AABoxTree.h">
+      <Filter>SourceFiles\Math\Geometry\SpacePartitions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\GaussTree.h">
+      <Filter>SourceFiles\Math\Geometry\SpacePartitions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\KDTree.h">
+      <Filter>SourceFiles\Math\Geometry\SpacePartitions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\Octree.h">
+      <Filter>SourceFiles\Math\Geometry\SpacePartitions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\BSplineSurface.h">
+      <Filter>SourceFiles\Math\Geometry\Surfaces\SurfaceLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\NURBSSurface.h">
+      <Filter>SourceFiles\Math\Geometry\Surfaces\SurfaceLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\QuadricSurface.h">
+      <Filter>SourceFiles\Math\Geometry\Surfaces\SurfaceLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\ImplicitSurface.h">
+      <Filter>SourceFiles\Math\Geometry\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\ParametricSurface.h">
+      <Filter>SourceFiles\Math\Geometry\Surfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Analysis\Signal\Transforms.h">
+      <Filter>SourceFiles\Math\Analysis\Signal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Complex\Complex.h">
+      <Filter>SourceFiles\Math\Types\Complex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Discrete\Box3.h">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Discrete\Offset3.h">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Lib\Math\Types\Discrete\Point3.h">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\Lib\Datastruct\Cache\CacheMap.cpp">
+      <Filter>SourceFiles\Datastruct\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Datastruct\Datastruct.cpp">
+      <Filter>SourceFiles\Datastruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Error\ErrorManager.cpp">
+      <Filter>SourceFiles\Error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Memory\Allocators\BreakAllocator.cpp">
+      <Filter>SourceFiles\Memory\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Memory\Allocators\HeapAllocator.cpp">
+      <Filter>SourceFiles\Memory\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Memory\Allocators\MemoryAllocator.cpp">
+      <Filter>SourceFiles\Memory\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Memory\Allocators\PoolAllocator.cpp">
+      <Filter>SourceFiles\Memory\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Memory\Allocators\StackAllocator.cpp">
+      <Filter>SourceFiles\Memory\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Memory\MemoryManager.cpp">
+      <Filter>SourceFiles\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Object\Patterns\Manager.cpp">
+      <Filter>SourceFiles\Object\Patterns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\Class.cpp">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\Definitions.cpp">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\Function.cpp">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\Member.cpp">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\Method.cpp">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\Reflect.cpp">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\Type.cpp">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Object\Reflection\UnionStruct.cpp">
+      <Filter>SourceFiles\Object\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Object\SmartPointer\SmartPointer.cpp">
+      <Filter>SourceFiles\Object\SmartPointer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Object\Object.cpp">
+      <Filter>SourceFiles\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\String\PatternMatching.cpp">
+      <Filter>SourceFiles\String</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\UID\IDAllocator.cpp">
+      <Filter>SourceFiles\UUID</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\UID\UID.cpp">
+      <Filter>SourceFiles\UUID</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\LCPSolver\LCPSolver.cpp">
+      <Filter>SourceFiles\Math\Algebra\LCPSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\BandedMatrix.cpp">
+      <Filter>SourceFiles\Math\Algebra\LinearSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystem2.cpp">
+      <Filter>SourceFiles\Math\Algebra\LinearSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystem3.cpp">
+      <Filter>SourceFiles\Math\Algebra\LinearSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\LinearSystem\LinearSystemN.cpp">
+      <Filter>SourceFiles\Math\Algebra\LinearSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecomposition2.cpp">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecomposition3.cpp">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EigenDecompositionN.cpp">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\EulerDecomposition.cpp">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\QDUDecomposition.cpp">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecomposition2.cpp">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecomposition3.cpp">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Matrix\SingularDecompositionN.cpp">
+      <Filter>SourceFiles\Math\Algebra\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Quaternion\ConstrainedQuaternion.cpp">
+      <Filter>SourceFiles\Math\Algebra\Quaternion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Algebra\Quaternion\UnConstrainedQuaternion.cpp">
+      <Filter>SourceFiles\Math\Algebra\Quaternion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Analysis\FunctionBasis\BSplineBasis.cpp">
+      <Filter>SourceFiles\Math\Analysis\FunctionBasis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Analysis\Integration\Integrator1.cpp">
+      <Filter>SourceFiles\Math\Analysis\Integration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Analysis\Integration\ODESolverN.cpp">
+      <Filter>SourceFiles\Math\Analysis\Integration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Analysis\Interpolation\InterpolatorBilinear.cpp">
+      <Filter>SourceFiles\Math\Analysis\Interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Analysis\Interpolation\InterpolatorLinear.cpp">
+      <Filter>SourceFiles\Math\Analysis\Interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Analysis\Polynomial\Polynomial1.cpp">
+      <Filter>SourceFiles\Math\Analysis\Polynomial</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Formats\Fixed.cpp">
+      <Filter>SourceFiles\Math\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Formats\Scalar.cpp">
+      <Filter>SourceFiles\Math\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Functions\MathFunction.cpp">
+      <Filter>SourceFiles\Math\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Hash\Hashing.cpp">
+      <Filter>SourceFiles\Math\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Hash\MD5.cpp">
+      <Filter>SourceFiles\Math\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Hash\SHA1.cpp">
+      <Filter>SourceFiles\Math\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Random\Random.cpp">
+      <Filter>SourceFiles\Math\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Color\Color3.cpp">
+      <Filter>SourceFiles\Math\Types\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Color\Color4.cpp">
+      <Filter>SourceFiles\Math\Types\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Discrete\Offset2.cpp">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Discrete\Point2.cpp">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Discrete\Rectangle2.cpp">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix2.cpp">
+      <Filter>SourceFiles\Math\Types\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix3.cpp">
+      <Filter>SourceFiles\Math\Types\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Matrix\Matrix4.cpp">
+      <Filter>SourceFiles\Math\Types\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Matrix\MatrixN.cpp">
+      <Filter>SourceFiles\Math\Types\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Quaternion\Quaternion.cpp">
+      <Filter>SourceFiles\Math\Types\Quaternion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord1.cpp">
+      <Filter>SourceFiles\Math\Types\TextureCoord</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord2.cpp">
+      <Filter>SourceFiles\Math\Types\TextureCoord</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord3.cpp">
+      <Filter>SourceFiles\Math\Types\TextureCoord</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\TextureCoord\TextureCoord4.cpp">
+      <Filter>SourceFiles\Math\Types\TextureCoord</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Transform\Transform2.cpp">
+      <Filter>SourceFiles\Math\Types\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Transform\Transform3.cpp">
+      <Filter>SourceFiles\Math\Types\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Vector\Vector2.cpp">
+      <Filter>SourceFiles\Math\Types\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Vector\Vector3.cpp">
+      <Filter>SourceFiles\Math\Types\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Vector\Vector4.cpp">
+      <Filter>SourceFiles\Math\Types\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Vector\VectorN.cpp">
+      <Filter>SourceFiles\Math\Types\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex2.cpp">
+      <Filter>SourceFiles\Math\Types\Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex3.cpp">
+      <Filter>SourceFiles\Math\Types\Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Vertex\Vertex4.cpp">
+      <Filter>SourceFiles\Math\Types\Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BoundingVolume.cpp">
+      <Filter>SourceFiles\Math\Geometry\BoundingShapes\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BVAABox.cpp">
+      <Filter>SourceFiles\Math\Geometry\BoundingShapes\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\3D\BVSphere.cpp">
+      <Filter>SourceFiles\Math\Geometry\BoundingShapes\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\BoundingShapes\2D\BoundingSurface.cpp">
+      <Filter>SourceFiles\Math\Geometry\BoundingShapes\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurveLibrary\BSplinePatch2.cpp">
+      <Filter>SourceFiles\Math\Geometry\Curves\2D\CurveLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\Curve2.cpp">
+      <Filter>SourceFiles\Math\Geometry\Curves\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurveChain2.cpp">
+      <Filter>SourceFiles\Math\Geometry\Curves\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\2D\CurvePatch2.cpp">
+      <Filter>SourceFiles\Math\Geometry\Curves\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\BezierPatch3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\BSplinePatch3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\CubicPolynomialPatch3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\NaturalSplineChain3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\NURBSPatch3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\PolynomialPatch3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveLibrary\TCBSplineChain3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D\CurveLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\Curve3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurveChain3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Curves\3D\CurvePatch3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Curves\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\2D\Linear\IntersectSegment2.cpp">
+      <Filter>SourceFiles\Math\Geometry\Intersection\2D\Linear</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\2D\IntersectConvexPolygon2.cpp">
+      <Filter>SourceFiles\Math\Geometry\Intersection\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Linear\IntersectSegment3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Linear</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneLine3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneRay3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectPlaneSegment3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Line3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Ray3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\3D\Planar\IntersectTriangle3Segment3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Intersection\3D\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector1.cpp">
+      <Filter>SourceFiles\Math\Geometry\Intersection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector2.cpp">
+      <Filter>SourceFiles\Math\Geometry\Intersection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Intersection\Intersector3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Intersection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifold2.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Edges</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifold3.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Edges</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Edges\MeshEdgeManifoldN.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Edges</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshPolygonManifold3.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshPolygonManifoldN.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshQuadManifold3.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshQuadManifoldN.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshTriangleManifold3.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Facets\MeshTriangleManifoldN.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Facets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Vertices\MeshVertexManifold2.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Vertices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\Vertices\MeshVertexManifoldN.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features\Vertices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeature.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeatureDeclarations.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Features\MeshFeatureKey.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Graphs\MeshDeformableGraph.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Graphs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\Graphs\MeshVoronoiGraph.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs\Graphs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshGraph.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshManifold2.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\MeshGraphs\MeshManifold3.cpp">
+      <Filter>SourceFiles\Math\Geometry\MeshGraphs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Line2.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\2D\Linear</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Ray2.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\2D\Linear</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\Linear\Segment2.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\2D\Linear</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\2D\ConvexPolygon2.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Line3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Linear</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Ray3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Linear</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Linear\Segment3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Linear</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Circle3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\ConvexPolygon3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Plane.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Quad3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Planar\Triangle3.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Box.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Cylinder.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Sphere.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Tetrahedron.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\Torus.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Primitives\3D\TruncatedCone.cpp">
+      <Filter>SourceFiles\Math\Geometry\Primitives\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\AABoxTree.cpp">
+      <Filter>SourceFiles\Math\Geometry\SpacePartitions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\GaussTree.cpp">
+      <Filter>SourceFiles\Math\Geometry\SpacePartitions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\KDTree.cpp">
+      <Filter>SourceFiles\Math\Geometry\SpacePartitions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\SpacePartitions\Octree.cpp">
+      <Filter>SourceFiles\Math\Geometry\SpacePartitions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\BSplineSurface.cpp">
+      <Filter>SourceFiles\Math\Geometry\Surfaces\SurfaceLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\NURBSSurface.cpp">
+      <Filter>SourceFiles\Math\Geometry\Surfaces\SurfaceLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\SurfaceLibrary\QuadricSurface.cpp">
+      <Filter>SourceFiles\Math\Geometry\Surfaces\SurfaceLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\ImplicitSurface.cpp">
+      <Filter>SourceFiles\Math\Geometry\Surfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Geometry\Surfaces\ParametricSurface.cpp">
+      <Filter>SourceFiles\Math\Geometry\Surfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Analysis\Signal\Transforms.cpp">
+      <Filter>SourceFiles\Math\Analysis\Signal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Complex\Complex.cpp">
+      <Filter>SourceFiles\Math\Types\Complex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Discrete\Box3.cpp">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Discrete\Offset3.cpp">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Lib\Math\Types\Discrete\Point3.cpp">
+      <Filter>SourceFiles\Math\Types\Discrete</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,42 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Engine/World/Nodes/WorldBaseNode.inl
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : Base Node class for the WorldGraph manager
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// WorldBaseNode implementation
+inline Bool WorldBaseNode::IsLeaf() const {
+    return ( (GetType() & 0x80000000) == 0 );
+}
+inline Bool WorldBaseNode::IsNode() const {
+    return ( (GetType() & 0x80000000) != 0 );
+}
+
+inline const GChar * WorldBaseNode::GetName() const {
+    return m_strName;
+}
+
+inline WorldBaseNode * WorldBaseNode::GetParent() const {
+    return m_pParent;
+}
+
+inline DWord WorldBaseNode::GetDebugFlags() const {
+    return m_dwDebugFlags;
+}
+inline Void WorldBaseNode::SetDebugFlags( DWord dwDebugFlags ) {
+    m_dwDebugFlags = dwDebugFlags;
+}

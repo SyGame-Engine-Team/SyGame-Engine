@@ -1,0 +1,74 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Lib/Math/Geometry/Primitives/3D/Torus.h
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : Primitives 3D : Torus
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header prelude
+#ifndef SCARAB_LIB_MATH_GEOMETRY_PRIMITIVES_3D_TORUS_H
+#define SCARAB_LIB_MATH_GEOMETRY_PRIMITIVES_3D_TORUS_H
+
+/////////////////////////////////////////////////////////////////////////////////
+// Includes
+#include "../../../../Error/ErrorManager.h"
+
+#include "../../../Types/Vector/Vector3.h"
+#include "../../../Types/Vertex/Vertex3.h"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Constants definitions
+
+/////////////////////////////////////////////////////////////////////////////////
+// The TTorus class
+template<typename Real>
+class TTorus
+{
+public:
+	TTorus(); // uninitialized
+	TTorus( const TVertex3<Real> & vCenter, const TVector3<Real> & vAxis, Real fOuterRadius, Real fInnerRadius );
+	TTorus( const TTorus<Real> & rhs );
+	~TTorus();
+
+	// Operators
+	inline TTorus<Real> & operator=( const TTorus<Real> & rhs );
+
+    // Helper methods
+    Bool TestInclusion( const TVertex3<Real> & vPoint ) const;
+
+    TVertex3<Real> ClosestPoint( const TVertex3<Real> & vPoint ) const;
+    Real Distance( const TVertex3<Real> & vPoint ) const;
+
+    // Center/Axis/Radiuses representation
+	TVertex3<Real> Center;
+	TVector3<Real> Axis;
+	Real OuterRadius; // Axis radius
+	Real InnerRadius; // Ring radius
+};
+
+// Explicit instanciation
+typedef TTorus<Float> Torusf;
+typedef TTorus<Double> Torusd;
+typedef TTorus<Scalar> Torus;
+
+/////////////////////////////////////////////////////////////////////////////////
+// Backward Includes (Inlines & Templates)
+#include "Torus.inl"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header end
+#endif // SCARAB_LIB_MATH_GEOMETRY_PRIMITIVES_3D_TORUS_H
+

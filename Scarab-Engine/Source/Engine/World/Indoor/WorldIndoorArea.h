@@ -1,0 +1,71 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Engine/World/Indoor/WorldIndoorArea.h
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : World Graph : Indoor Area.
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : The BSP tree should be built so that the leaf nodes contains
+//              WorldConvexRoom objects ...
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header prelude
+#ifndef SCARAB_ENGINE_WORLD_INDOOR_WORLDINDOORAREA_H
+#define SCARAB_ENGINE_WORLD_INDOOR_WORLDINDOORAREA_H
+
+/////////////////////////////////////////////////////////////////////////////////
+// Includes
+#include "../Container/WorldBSPNode.h"
+
+#include "WorldPortalCuller.h"
+
+#include "WorldPortal.h"
+#include "WorldConvexRoom.h"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Constants definitions
+
+/////////////////////////////////////////////////////////////////////////////////
+// The WorldIndoorArea class
+class WorldIndoorArea : public WorldBSPNode
+{
+public:
+    WorldIndoorArea( const GChar * strName = NULL );
+    virtual ~WorldIndoorArea();
+
+    // Type
+    inline virtual WorldNodeType GetType() const;
+
+    // Outside subtree access
+    inline WorldBaseNode * GetOutsideNode() const;
+    inline WorldBaseNode * SetOutsideNode( WorldBaseNode * pOutside );
+
+    // Containment test, returns null if outside
+    WorldConvexRoom * GetContainingRoom( const Vertex3 & vPoint ) const;
+
+protected:
+    // Culling support
+    virtual Void _OnVisibleGroup( WorldCuller & wCuller, Bool bNoCull );
+
+private:
+    WorldPortalCuller m_PortalCuller;
+};
+
+/////////////////////////////////////////////////////////////////////////////////
+// Backward Includes (Inlines & Templates)
+#include "WorldIndoorArea.inl"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header end
+#endif // SCARAB_ENGINE_WORLD_INDOOR_WORLDINDOORAREA_H
+

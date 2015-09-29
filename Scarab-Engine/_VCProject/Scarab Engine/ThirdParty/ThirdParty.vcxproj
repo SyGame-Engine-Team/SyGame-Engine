@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{23CA2C0F-CE2B-41D7-852E-20818A199273}</ProjectGuid>
+    <RootNamespace>ThirdParty</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)../../Source/ThirdParty;$(WINSDK_DIR)Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <SourcePath>$(SolutionDir)../../Source/ThirdParty;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExcludePath>$(ExcludePath)</ExcludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\D2D1Mappings.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\D2D1RenderingContext.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Bitmap.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Brush.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Geometry.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Layer.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Mesh.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1RenderState.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1StrokeStyle.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Text.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\D3D11Mappings.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\D3D11Renderer.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\D3D11Window.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11Asynchronous.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11Buffer.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11DeferredContext.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11InputLayout.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11RenderState.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11Resource.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11ResourceView.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11Shader.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11Texture.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\System\File.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\System\Hardware\FPU.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\System\Hardware\Hardware.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\System\Hardware\SSE.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\System\Networking.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\System\Platform.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\System\String.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\System\System.cpp" />
+    <ClCompile Include="..\..\..\Source\ThirdParty\System\Threading.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\D2D1Mappings.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\D2D1RenderingContext.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Bitmap.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Brush.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Geometry.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Layer.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Mesh.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1RenderState.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1StrokeStyle.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Text.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\D3D11Mappings.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\D3D11Renderer.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\D3D11Window.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11Asynchronous.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11Buffer.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11DeferredContext.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11InputLayout.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11RenderState.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11Resource.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11ResourceView.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11Shader.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11Texture.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\System\File.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\System\Hardware\FPU.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\System\Hardware\Hardware.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\System\Hardware\SSE.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\System\Networking.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\System\Platform.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\System\String.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\System\System.h" />
+    <ClInclude Include="..\..\..\Source\ThirdParty\System\Threading.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\D2D1Mappings.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\D2D1RenderingContext.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Bitmap.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Brush.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Geometry.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Layer.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Mesh.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1RenderState.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1StrokeStyle.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\2D\Resources\D2D1Text.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\D3D11Mappings.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\D3D11Renderer.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\D3D11Window.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11Asynchronous.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11Buffer.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11DeferredContext.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11InputLayout.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11RenderState.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11Resource.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11ResourceView.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11Shader.inl" />
+    <None Include="..\..\..\Source\ThirdParty\DirectX11\Direct3D\Resources\D3D11Texture.inl" />
+    <None Include="..\..\..\Source\ThirdParty\System\File.inl" />
+    <None Include="..\..\..\Source\ThirdParty\System\Hardware\FPU.inl" />
+    <None Include="..\..\..\Source\ThirdParty\System\Hardware\Hardware.inl" />
+    <None Include="..\..\..\Source\ThirdParty\System\Hardware\SSE.inl" />
+    <None Include="..\..\..\Source\ThirdParty\System\Networking.inl" />
+    <None Include="..\..\..\Source\ThirdParty\System\Platform.inl" />
+    <None Include="..\..\..\Source\ThirdParty\System\String.inl" />
+    <None Include="..\..\..\Source\ThirdParty\System\System.inl" />
+    <None Include="..\..\..\Source\ThirdParty\System\Threading.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

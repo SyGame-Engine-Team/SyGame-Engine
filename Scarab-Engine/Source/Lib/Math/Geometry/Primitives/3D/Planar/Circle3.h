@@ -1,0 +1,73 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Lib/Math/Geometry/Primitives/3D/Planar/Circle3.h
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : Primitives 3D : Planar, Circle3
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs :
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header prelude
+#ifndef SCARAB_LIB_MATH_GEOMETRY_PRIMITIVES_3D_PLANAR_CIRCLE3_H
+#define SCARAB_LIB_MATH_GEOMETRY_PRIMITIVES_3D_PLANAR_CIRCLE3_H
+
+/////////////////////////////////////////////////////////////////////////////////
+// Includes
+#include "../../../../Types/Vector/Vector3.h"
+#include "../../../../Types/Vertex/Vertex3.h"
+
+#include "Plane.h"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Constants definitions
+
+/////////////////////////////////////////////////////////////////////////////////
+// The TCircle3 class
+template<typename Real>
+class TCircle3
+{
+public:
+    TCircle3(); // uninitialized
+    TCircle3( const TVertex3<Real> & vCenter, const TVector3<Real> & vAxis, Real fRadius );
+    TCircle3( const TCircle3<Real> & rhs );
+    ~TCircle3();
+
+    // Operators
+	inline TCircle3<Real> & operator=( const TCircle3<Real> & rhs );
+
+    // Helper methods
+    inline TPlane<Real> GetPlane() const;
+
+    TVertex3<Real> ClosestPoint( const TVertex3<Real> & vPoint ) const;
+    Real Distance( const TVertex3<Real> & vPoint ) const;
+
+    // Center/Axis/Radius representation
+    TVertex3<Real> Center;
+    TVector3<Real> Axis;
+    Real Radius;
+};
+
+// Explicit instanciation
+typedef TCircle3<Float> Circle3f;
+typedef TCircle3<Double> Circle3d;
+typedef TCircle3<Scalar> Circle3;
+
+/////////////////////////////////////////////////////////////////////////////////
+// Backward Includes (Inlines & Templates)
+#include "Circle3.inl"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header end
+#endif // SCARAB_LIB_MATH_GEOMETRY_PRIMITIVES_3D_PLANAR_CIRCLE3_H
+

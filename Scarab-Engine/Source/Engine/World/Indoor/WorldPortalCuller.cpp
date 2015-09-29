@@ -1,0 +1,47 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Engine/World/Indoor/WorldPortalCuller.cpp
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : Adds unicity to VisibleGroups computed for portal systems
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : none
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Includes
+#include "WorldPortalCuller.h"
+
+#include "../WorldManager.h"
+
+/////////////////////////////////////////////////////////////////////////////////
+// WorldPortalCuller implementation
+WorldPortalCuller::WorldPortalCuller():
+    WorldCuller(), m_mapUniqueLeaves(), m_itEnumerate()
+{
+    m_iCount = 0;
+
+    m_mapUniqueLeaves.UseMemoryContext( WorldFn->GetMemoryContext(), TEXT("VisibleGroups") );
+    m_mapUniqueLeaves.SetComparator( _WorldLeafPtr_Compare );
+    m_mapUniqueLeaves.Create();
+}
+WorldPortalCuller::~WorldPortalCuller()
+{
+    m_mapUniqueLeaves.Destroy();
+}
+
+Void WorldPortalCuller::OnVisibleNode( WorldLeaf * pVisibleLeaf )
+{
+    Bool bInserted = m_mapUniqueLeaves.Insert( pVisibleLeaf, m_iCount );
+    if ( bInserted )
+        ++m_iCount;
+}

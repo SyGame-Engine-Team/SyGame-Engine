@@ -1,0 +1,43 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Lib/Datastruct/Datastruct.inl
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : An abstraction layer for data-containers memory management.
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Datastruct implementation
+
+inline Void Datastruct::UseMemoryContext( MemoryContextID idMemoryContext, const GChar * strAllocatorName ) {
+    m_idMemoryContext = idMemoryContext;
+    m_strAllocatorName = strAllocatorName;
+}
+
+inline Bool Datastruct::IsEmpty() const {
+    return ( Count() == 0 );
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+
+inline Void Datastruct::_SelectMemory() {
+    if ( m_idMemoryContext == INVALID_OFFSET || m_strAllocatorName == NULL )
+        return;
+    MemoryFn->SelectMemory( m_strAllocatorName, m_idMemoryContext );
+}
+inline Void Datastruct::_UnSelectMemory() {
+    if ( m_idMemoryContext == INVALID_OFFSET || m_strAllocatorName == NULL )
+        return;
+    MemoryFn->UnSelectMemory();
+}

@@ -1,0 +1,69 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Lib/Object/Reflection/Function.h
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : Function type descriptor.
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header prelude
+#ifndef SCARAB_LIB_OBJECT_REFLECTION_FUNCTION_H
+#define SCARAB_LIB_OBJECT_REFLECTION_FUNCTION_H
+
+/////////////////////////////////////////////////////////////////////////////////
+// Includes
+#include "Definitions.h"
+#include "Type.h"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Constants definitions
+
+/////////////////////////////////////////////////////////////////////////////////
+// _Reflection namespace (private space)
+namespace _Reflection
+{
+    // Function descriptor
+    class FunctionDescriptor : public TypeDescriptor
+    {
+    public:
+        FunctionDescriptor( const TypeCreationParams * pParams, SpecifierFunctionMod iFuncMod,
+                            ModTypeDescriptor * arrReturnArguments );
+        ~FunctionDescriptor();
+
+        inline SpecifierFunctionMod SpecFuncMod() const;
+
+        inline const ModTypeDescriptor & Return() const;
+        inline const ModTypeDescriptor & Argument(UInt i) const;
+        inline UInt ArgumentsCount() const;
+
+        virtual Bool IsEqual(const TypeDescriptor * pType) const;
+
+    private:
+        // Specifiers
+        SpecifierFunctionMod m_specFuncMod;
+
+        // Prototype links
+        ModTypeDescriptor * m_arrReturnArguments; // NULL-ended array
+        UInt m_iArgumentsCount;
+    };
+};
+
+/////////////////////////////////////////////////////////////////////////////////
+// Backward Includes (Inlines & Templates)
+#include "Function.inl"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header end
+#endif // SCARAB_LIB_OBJECT_REFLECTION_FUNCTION_H

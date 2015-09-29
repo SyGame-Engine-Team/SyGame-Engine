@@ -1,0 +1,804 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{73FF19BA-FFD6-4D31-B1BE-64E3380B292C}</ProjectGuid>
+    <RootNamespace>Engine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)../../Source/Engine;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <SourcePath>$(SolutionDir)../../Source/Engine;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExcludePath>$(ExcludePath)</ExcludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\Engine\Application\ApplicationManager.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Application\Instance\BaseApplication.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Application\Instance\ConsoleApplication.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Application\Instance\WindowApplication.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Application\Tools\CommandLine.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Application\Tools\InitCleanup.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ConsoleCommand.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ConsoleEnvironment.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ConsoleManager.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandClear.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandDump.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandEcho.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandHelp.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandLookup.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandRun.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandVar.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandVarDel.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandVarNew.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandVarSet.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\GUICommands\CommandShowTree.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\Interfaces\ResourceViewer.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\Interfaces\VideoSettings.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandAppend.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandClose.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandCreate.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandCWD.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandDestroy.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandExport.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandImport.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandInspect.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandList.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandLoad.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandMove.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandOpen.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandRDB.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandRead.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandRename.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandSave.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandSeek.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandWrite.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\GUIBackboard.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\GUIEventProcessor.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\GUIManager.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\GUIOverlay.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\GUIWidget.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\GUIWindow.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Overlays\GUIMenu.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Tools\GUIDragNDrop.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Tools\GUIEvent.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Tools\GUILayout.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Tools\GUIMenuLoop.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Tools\GUIMessageBox.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Tools\GUIMoveResize.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Tools\GUISkin.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Tools\GUITimerEvents.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUIButton.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUICheckBox.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUIComboList.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUIContainer.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUILabel.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUIRadioButton.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUISection.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUITextInput.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Widgets\Extended\GUIList.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Widgets\Extended\GUISwitchTabs.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Widgets\Extended\GUITextLog.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Widgets\Extended\GUITree.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Widgets\Window\GUIBorders.h" />
+    <ClInclude Include="..\..\..\Source\Engine\GUI\Widgets\Window\GUITitleBar.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Input\InputManager.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Curves\MeshCurve.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\LOD\WorldDLODNode.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\ModelingManager.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Primitives\Linear\MeshSegment.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Primitives\MeshBox.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Primitives\MeshCylinder.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Primitives\MeshSphere.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Primitives\MeshTetrahedron.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Primitives\MeshTorus.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Primitives\MeshTruncatedCone.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Primitives\Planar\MeshDisk.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Primitives\Planar\MeshGridPlane.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Primitives\Planar\MeshPolygon.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Primitives\Planar\MeshQuad.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Primitives\Planar\MeshTriangle.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Surfaces\MeshHeightField.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Surfaces\MeshSurface.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Surfaces\RevolutionSurfaceMesh.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Modeling\Surfaces\TubeSurfaceMesh.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Patching\PatchManager.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Bodies\KinematicBody.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Bodies\RigidBody.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Bodies\SoftBody.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Bodies\SystemBody.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Bodies\Systems\ParticleSystem.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Bodies\Systems\RagDoll.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Bodies\Systems\Skeleton.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\BroadPhase\BroadPhase.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\BroadPhase\PairListener.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\BroadPhase\PairManager.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\BroadPhase\SAP\SweepAndPrune.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Concave\ConcaveBoxCollision.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Concave\ConcaveConcaveCollision.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Concave\ConcaveConvexCollision.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Concave\ConcaveSphereCollision.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\ContactManifold.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Convex\ConvexBoxCollision.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Convex\ConvexConvexCollision.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Convex\ConvexSphereCollision.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Convex\ConvexTriangleCollision.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\GJK\GJK.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\NarrowPhase.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\BoxBoxCollision.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\SphereBoxCollision.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\SphereSphereCollision.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\TriangleBoxCollision.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\TriangleSphereCollision.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\TriangleTriangleCollision.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\SAT\SAT.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\VClip\SingleSideVClip.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\VClip\VoronoiClip.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\ConstraintSolver\ConstraintSolver.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\ConstraintSolver\JacobianConstraint.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\ConstraintSolver\SoftConstraintSolver.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Controllers\KinematicController.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Controllers\Motion\BlendController.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Controllers\Motion\CharacterController.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Controllers\Motion\IKJointController.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Controllers\Motion\KeyFrameController.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Controllers\Motion\ManualController.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Controllers\Motion\ParticleController.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Controllers\Motion\PathController.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Controllers\Shape\BoneController.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Controllers\Shape\MorphController.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\IslandSolver\Edges\ContactEdge.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\IslandSolver\Edges\JointEdge.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\IslandSolver\Island.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\IslandSolver\IslandEdge.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\IslandSolver\IslandNode.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\IslandSolver\IslandSolver.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\IslandSolver\Nodes\BodyNode.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Joints\JointAnchor.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Joints\JointConeTwist.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Joints\JointConstraint.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Joints\JointFixed.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Joints\JointGear.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Joints\JointGeneric6DOF.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Joints\JointHinge.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Joints\JointSlider.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Joints\JointUniversal.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Joints\JointWheel.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\PhysicsManager.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Shape\Concave\ShapeConcaveMesh.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Shape\Concave\ShapeDeformable.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Shape\Concave\ShapeHeightField.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Shape\Convex\ShapeConvexMesh.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Shape\Primitive\ShapeBox.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Shape\Primitive\ShapeSphere.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Shape\Primitive\ShapeTriangle.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Shape\Shape.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Physics\Shape\TransformedShape.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\2D\GPU2DContext.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DBitmap.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DBrush.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DGeometry.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DLayer.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DMesh.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DRenderState.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DStrokeStyle.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DText.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\DeviceRenderer.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Effects\Effect.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Effects\EffectInstance.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Basic\EffectColor.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Basic\EffectTexture.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\EffectDefault.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Lighting\EffectLightMaterial.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Lighting\EffectLightMaterialTexture.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Lighting\EffectMaterial.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Lighting\EffectMaterialTexture.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Effects\EffectPass.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Effects\EffectTechnique.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\RenderingManager.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Resources\Camera.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Resources\GPUAsynchronous.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Resources\GPUBuffer.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Resources\GPUDeferredContext.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Resources\GPUInputLayout.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Resources\GPURenderState.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Resources\GPUResource.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Resources\GPUResourceView.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Resources\GPUShader.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Resources\GPUTexture.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Resources\Light.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Resources\Material.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Rendering\Resources\Mesh.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\Database\RDBFileStructure.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\Database\RDBPersistentStorage.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\Database\RDBTreeOperator.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\Database\ResourceDB.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\FileFormats\Bitmaps\BitmapBMAP.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\FileFormats\Bitmaps\BitmapBMP.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\FileFormats\Bitmaps\BitmapFile.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\FileFormats\Meshes\MeshFile.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\FileFormats\Meshes\MeshMESH.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\FileFormats\Textures\TextureBMP.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\FileFormats\Textures\TextureFile.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\FileFormats\Textures\TextureTEX.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\Resource.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\ResourceFile.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\ResourceManager.h" />
+    <ClInclude Include="..\..\..\Source\Engine\Resource\XML\XML.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\Container\WorldBSPNode.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\Container\WorldLight.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\Container\WorldSwitchNode.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\GlobalEffects\EffectPlanarReflection.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\GlobalEffects\EffectPlanarShadows.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\GlobalEffects\GlobalEffect.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\Indoor\WorldConvexRoom.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\Indoor\WorldIndoorArea.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\Indoor\WorldPortal.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\Indoor\WorldPortalCuller.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\Nodes\WorldBaseNode.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\Nodes\WorldLeaf.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\Nodes\WorldNode.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\Outdoor\WorldOutdoor.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\Outdoor\WorldOutdoorArea.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\WorldCamera.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\WorldCaster.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\WorldCuller.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\WorldDebugDraw.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\WorldManager.h" />
+    <ClInclude Include="..\..\..\Source\Engine\World\WorldPathFinder.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Source\Engine\Application\ApplicationManager.inl" />
+    <None Include="..\..\..\Source\Engine\Application\Instance\BaseApplication.inl" />
+    <None Include="..\..\..\Source\Engine\Application\Instance\ConsoleApplication.inl" />
+    <None Include="..\..\..\Source\Engine\Application\Instance\WindowApplication.inl" />
+    <None Include="..\..\..\Source\Engine\Application\Tools\CommandLine.inl" />
+    <None Include="..\..\..\Source\Engine\Application\Tools\InitCleanup.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ConsoleCommand.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ConsoleEnvironment.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ConsoleManager.inl" />
+    <None Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandClear.inl" />
+    <None Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandDump.inl" />
+    <None Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandEcho.inl" />
+    <None Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandHelp.inl" />
+    <None Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandLookup.inl" />
+    <None Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandRun.inl" />
+    <None Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandVar.inl" />
+    <None Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandVarDel.inl" />
+    <None Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandVarNew.inl" />
+    <None Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandVarSet.inl" />
+    <None Include="..\..\..\Source\Engine\Console\GUICommands\CommandShowTree.inl" />
+    <None Include="..\..\..\Source\Engine\Console\Interfaces\ResourceViewer.inl" />
+    <None Include="..\..\..\Source\Engine\Console\Interfaces\VideoSettings.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandAppend.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandClose.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandCreate.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandCWD.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandDestroy.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandExport.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandImport.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandInspect.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandList.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandLoad.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandMove.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandOpen.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandRDB.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandRead.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandRename.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandSave.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandSeek.inl" />
+    <None Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandWrite.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\GUIBackboard.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\GUIEventProcessor.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\GUIManager.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\GUIOverlay.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\GUIWidget.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\GUIWindow.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Overlays\GUIMenu.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Tools\GUIDragNDrop.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Tools\GUIEvent.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Tools\GUILayout.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Tools\GUIMenuLoop.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Tools\GUIMessageBox.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Tools\GUIMoveResize.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Tools\GUISkin.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Tools\GUITimerEvents.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUIButton.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUICheckBox.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUIComboList.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUIContainer.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUILabel.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUIRadioButton.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUISection.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUITextInput.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Widgets\Extended\GUIList.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Widgets\Extended\GUISwitchTabs.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Widgets\Extended\GUITextLog.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Widgets\Extended\GUITree.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Widgets\Window\GUIBorders.inl" />
+    <None Include="..\..\..\Source\Engine\GUI\Widgets\Window\GUITitleBar.inl" />
+    <None Include="..\..\..\Source\Engine\Input\InputManager.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Curves\MeshCurve.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\LOD\WorldDLODNode.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\ModelingManager.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Primitives\Linear\MeshSegment.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Primitives\MeshBox.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Primitives\MeshCylinder.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Primitives\MeshSphere.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Primitives\MeshTetrahedron.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Primitives\MeshTorus.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Primitives\MeshTruncatedCone.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Primitives\Planar\MeshDisk.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Primitives\Planar\MeshGridPlane.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Primitives\Planar\MeshPolygon.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Primitives\Planar\MeshQuad.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Primitives\Planar\MeshTriangle.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Surfaces\MeshHeightField.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Surfaces\MeshSurface.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Surfaces\RevolutionSurfaceMesh.inl" />
+    <None Include="..\..\..\Source\Engine\Modeling\Surfaces\TubeSurfaceMesh.inl" />
+    <None Include="..\..\..\Source\Engine\Patching\PatchManager.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Bodies\KinematicBody.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Bodies\RigidBody.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Bodies\SoftBody.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Bodies\SystemBody.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Bodies\Systems\ParticleSystem.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Bodies\Systems\RagDoll.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Bodies\Systems\Skeleton.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\BroadPhase\BroadPhase.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\BroadPhase\PairListener.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\BroadPhase\PairManager.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\BroadPhase\SAP\SweepAndPrune.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Concave\ConcaveBoxCollision.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Concave\ConcaveConcaveCollision.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Concave\ConcaveConvexCollision.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Concave\ConcaveSphereCollision.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\ContactManifold.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Convex\ConvexBoxCollision.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Convex\ConvexConvexCollision.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Convex\ConvexSphereCollision.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Convex\ConvexTriangleCollision.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\GJK\GJK.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\NarrowPhase.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\BoxBoxCollision.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\SphereBoxCollision.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\SphereSphereCollision.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\TriangleBoxCollision.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\TriangleSphereCollision.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\TriangleTriangleCollision.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\SAT\SAT.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\VClip\SingleSideVClip.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\VClip\VoronoiClip.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\ConstraintSolver\ConstraintSolver.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\ConstraintSolver\JacobianConstraint.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\ConstraintSolver\SoftConstraintSolver.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Controllers\KinematicController.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Controllers\Motion\BlendController.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Controllers\Motion\CharacterController.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Controllers\Motion\IKJointController.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Controllers\Motion\KeyFrameController.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Controllers\Motion\ManualController.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Controllers\Motion\ParticleController.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Controllers\Motion\PathController.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Controllers\Shape\BoneController.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Controllers\Shape\MorphController.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\IslandSolver\Edges\ContactEdge.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\IslandSolver\Edges\JointEdge.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\IslandSolver\Island.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\IslandSolver\IslandEdge.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\IslandSolver\IslandNode.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\IslandSolver\IslandSolver.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\IslandSolver\Nodes\BodyNode.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Joints\JointAnchor.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Joints\JointConeTwist.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Joints\JointConstraint.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Joints\JointFixed.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Joints\JointGear.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Joints\JointGeneric6DOF.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Joints\JointHinge.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Joints\JointSlider.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Joints\JointUniversal.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Joints\JointWheel.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\PhysicsManager.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Shape\Concave\ShapeConcaveMesh.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Shape\Concave\ShapeDeformable.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Shape\Concave\ShapeHeightField.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Shape\Convex\ShapeConvexMesh.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Shape\Primitive\ShapeBox.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Shape\Primitive\ShapeSphere.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Shape\Primitive\ShapeTriangle.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Shape\Shape.inl" />
+    <None Include="..\..\..\Source\Engine\Physics\Shape\TransformedShape.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\2D\GPU2DContext.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DBitmap.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DBrush.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DGeometry.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DLayer.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DMesh.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DRenderState.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DStrokeStyle.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DText.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\DeviceRenderer.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Effects\Effect.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Effects\EffectInstance.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Basic\EffectColor.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Basic\EffectTexture.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\EffectDefault.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Lighting\EffectLightMaterial.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Lighting\EffectLightMaterialTexture.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Lighting\EffectMaterial.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Lighting\EffectMaterialTexture.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Effects\EffectPass.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Effects\EffectTechnique.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\RenderingManager.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Resources\Camera.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Resources\GPUAsynchronous.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Resources\GPUBuffer.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Resources\GPUDeferredContext.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Resources\GPUInputLayout.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Resources\GPURenderState.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Resources\GPUResource.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Resources\GPUResourceView.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Resources\GPUShader.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Resources\GPUTexture.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Resources\Light.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Resources\Material.inl" />
+    <None Include="..\..\..\Source\Engine\Rendering\Resources\Mesh.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\Database\RDBFileStructure.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\Database\RDBPersistentStorage.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\Database\RDBTreeOperator.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\Database\ResourceDB.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\FileFormats\Bitmaps\BitmapBMAP.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\FileFormats\Bitmaps\BitmapBMP.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\FileFormats\Bitmaps\BitmapFile.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\FileFormats\Meshes\MeshFile.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\FileFormats\Meshes\MeshMESH.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\FileFormats\Textures\TextureBMP.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\FileFormats\Textures\TextureFile.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\FileFormats\Textures\TextureTEX.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\Resource.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\ResourceFile.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\ResourceManager.inl" />
+    <None Include="..\..\..\Source\Engine\Resource\XML\XML.inl" />
+    <None Include="..\..\..\Source\Engine\World\Container\WorldBSPNode.inl" />
+    <None Include="..\..\..\Source\Engine\World\Container\WorldLight.inl" />
+    <None Include="..\..\..\Source\Engine\World\Container\WorldSwitchNode.inl" />
+    <None Include="..\..\..\Source\Engine\World\GlobalEffects\EffectPlanarReflection.inl" />
+    <None Include="..\..\..\Source\Engine\World\GlobalEffects\EffectPlanarShadows.inl" />
+    <None Include="..\..\..\Source\Engine\World\GlobalEffects\GlobalEffect.inl" />
+    <None Include="..\..\..\Source\Engine\World\Indoor\WorldConvexRoom.inl" />
+    <None Include="..\..\..\Source\Engine\World\Indoor\WorldIndoorArea.inl" />
+    <None Include="..\..\..\Source\Engine\World\Indoor\WorldPortal.inl" />
+    <None Include="..\..\..\Source\Engine\World\Indoor\WorldPortalCuller.inl" />
+    <None Include="..\..\..\Source\Engine\World\Nodes\WorldBaseNode.inl" />
+    <None Include="..\..\..\Source\Engine\World\Nodes\WorldLeaf.inl" />
+    <None Include="..\..\..\Source\Engine\World\Nodes\WorldNode.inl" />
+    <None Include="..\..\..\Source\Engine\World\Outdoor\WorldOutdoor.inl" />
+    <None Include="..\..\..\Source\Engine\World\Outdoor\WorldOutdoorArea.inl" />
+    <None Include="..\..\..\Source\Engine\World\WorldCamera.inl" />
+    <None Include="..\..\..\Source\Engine\World\WorldCaster.inl" />
+    <None Include="..\..\..\Source\Engine\World\WorldCuller.inl" />
+    <None Include="..\..\..\Source\Engine\World\WorldDebugDraw.inl" />
+    <None Include="..\..\..\Source\Engine\World\WorldManager.inl" />
+    <None Include="..\..\..\Source\Engine\World\WorldPathFinder.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\Engine\Application\ApplicationManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Application\Instance\BaseApplication.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Application\Instance\ConsoleApplication.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Application\Instance\WindowApplication.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Application\Tools\CommandLine.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Application\Tools\InitCleanup.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ConsoleCommand.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ConsoleEnvironment.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ConsoleManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandClear.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandDump.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandEcho.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandHelp.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandLookup.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandRun.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandVar.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandVarDel.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandVarNew.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\GlobalCommands\CommandVarSet.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\GUICommands\CommandShowTree.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\Interfaces\ResourceViewer.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\Interfaces\VideoSettings.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandAppend.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandClose.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandCreate.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandCWD.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandDestroy.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandExport.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandImport.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandInspect.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandList.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandLoad.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandMove.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandOpen.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandRDB.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandRead.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandRename.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandSave.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandSeek.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Console\ResourceCommands\CommandWrite.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\GUIBackboard.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\GUIEventProcessor.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\GUIManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\GUIOverlay.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\GUIWidget.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\GUIWindow.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Overlays\GUIMenu.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Tools\GUIDragNDrop.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Tools\GUIEvent.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Tools\GUILayout.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Tools\GUIMenuLoop.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Tools\GUIMessageBox.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Tools\GUIMoveResize.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Tools\GUISkin.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Tools\GUITimerEvents.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUIButton.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUICheckBox.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUIComboList.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUIContainer.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUILabel.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUIRadioButton.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUISection.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Widgets\Common\GUITextInput.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Widgets\Extended\GUIList.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Widgets\Extended\GUISwitchTabs.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Widgets\Extended\GUITextLog.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Widgets\Extended\GUITree.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Widgets\Window\GUIBorders.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\GUI\Widgets\Window\GUITitleBar.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Input\InputManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Curves\MeshCurve.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\LOD\WorldDLODNode.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\ModelingManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Primitives\Linear\MeshSegment.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Primitives\MeshBox.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Primitives\MeshCylinder.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Primitives\MeshSphere.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Primitives\MeshTetrahedron.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Primitives\MeshTorus.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Primitives\MeshTruncatedCone.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Primitives\Planar\MeshDisk.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Primitives\Planar\MeshGridPlane.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Primitives\Planar\MeshPolygon.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Primitives\Planar\MeshQuad.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Primitives\Planar\MeshTriangle.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Surfaces\MeshHeightField.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Surfaces\MeshSurface.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Surfaces\RevolutionSurfaceMesh.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Modeling\Surfaces\TubeSurfaceMesh.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Patching\PatchManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Bodies\KinematicBody.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Bodies\RigidBody.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Bodies\SoftBody.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Bodies\SystemBody.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Bodies\Systems\ParticleSystem.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Bodies\Systems\RagDoll.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Bodies\Systems\Skeleton.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\BroadPhase\BroadPhase.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\BroadPhase\PairListener.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\BroadPhase\PairManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\BroadPhase\SAP\SweepAndPrune.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Concave\ConcaveBoxCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Concave\ConcaveConcaveCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Concave\ConcaveConvexCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Concave\ConcaveSphereCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\ContactManifold.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Convex\ConvexBoxCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Convex\ConvexConvexCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Convex\ConvexSphereCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Convex\ConvexTriangleCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\GJK\GJK.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\NarrowPhase.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\BoxBoxCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\SphereBoxCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\SphereSphereCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\TriangleBoxCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\TriangleSphereCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\Primitive\TriangleTriangleCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\SAT\SAT.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\VClip\SingleSideVClip.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\CollisionDetection\NarrowPhase\VClip\VoronoiClip.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\ConstraintSolver\ConstraintSolver.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\ConstraintSolver\JacobianConstraint.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\ConstraintSolver\SoftConstraintSolver.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Controllers\KinematicController.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Controllers\Motion\BlendController.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Controllers\Motion\CharacterController.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Controllers\Motion\IKJointController.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Controllers\Motion\KeyFrameController.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Controllers\Motion\ManualController.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Controllers\Motion\ParticleController.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Controllers\Motion\PathController.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Controllers\Shape\BoneController.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Controllers\Shape\MorphController.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\IslandSolver\Edges\ContactEdge.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\IslandSolver\Edges\JointEdge.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\IslandSolver\Island.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\IslandSolver\IslandEdge.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\IslandSolver\IslandNode.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\IslandSolver\IslandSolver.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\IslandSolver\Nodes\BodyNode.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Joints\JointAnchor.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Joints\JointConeTwist.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Joints\JointConstraint.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Joints\JointFixed.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Joints\JointGear.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Joints\JointGeneric6DOF.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Joints\JointHinge.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Joints\JointSlider.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Joints\JointUniversal.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Joints\JointWheel.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\PhysicsManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Shape\Concave\ShapeConcaveMesh.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Shape\Concave\ShapeDeformable.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Shape\Concave\ShapeHeightField.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Shape\Convex\ShapeConvexMesh.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Shape\Primitive\ShapeBox.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Shape\Primitive\ShapeSphere.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Shape\Primitive\ShapeTriangle.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Shape\Shape.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Physics\Shape\TransformedShape.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\2D\GPU2DContext.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DBitmap.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DBrush.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DGeometry.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DLayer.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DMesh.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DRenderState.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DStrokeStyle.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\2D\Resources\GPU2DText.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\DeviceRenderer.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Effects\Effect.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Effects\EffectInstance.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Basic\EffectColor.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Basic\EffectTexture.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\EffectDefault.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Lighting\EffectLightMaterial.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Lighting\EffectLightMaterialTexture.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Lighting\EffectMaterial.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Effects\EffectLibrary\Lighting\EffectMaterialTexture.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Effects\EffectPass.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Effects\EffectTechnique.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\RenderingManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Resources\Camera.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Resources\GPUAsynchronous.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Resources\GPUBuffer.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Resources\GPUDeferredContext.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Resources\GPUInputLayout.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Resources\GPURenderState.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Resources\GPUResource.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Resources\GPUResourceView.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Resources\GPUShader.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Resources\GPUTexture.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Resources\Light.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Resources\Material.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Rendering\Resources\Mesh.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\Database\RDBFileStructure.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\Database\RDBPersistentStorage.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\Database\RDBTreeOperator.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\Database\ResourceDB.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\FileFormats\Bitmaps\BitmapBMAP.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\FileFormats\Bitmaps\BitmapBMP.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\FileFormats\Bitmaps\BitmapFile.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\FileFormats\Meshes\MeshFile.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\FileFormats\Meshes\MeshMESH.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\FileFormats\Textures\TextureBMP.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\FileFormats\Textures\TextureFile.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\FileFormats\Textures\TextureTEX.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\Resource.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\ResourceFile.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\ResourceManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\Resource\XML\XML.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\Container\WorldBSPNode.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\Container\WorldLight.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\Container\WorldSwitchNode.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\GlobalEffects\EffectPlanarReflection.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\GlobalEffects\EffectPlanarShadows.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\GlobalEffects\GlobalEffect.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\Indoor\WorldConvexRoom.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\Indoor\WorldIndoorArea.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\Indoor\WorldPortal.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\Indoor\WorldPortalCuller.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\Nodes\WorldBaseNode.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\Nodes\WorldLeaf.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\Nodes\WorldNode.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\Outdoor\WorldOutdoor.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\Outdoor\WorldOutdoorArea.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\WorldCamera.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\WorldCaster.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\WorldCuller.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\WorldDebugDraw.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\WorldManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Engine\World\WorldPathFinder.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lib\Lib.vcxproj">
+      <Project>{fb45e172-d5ec-46e3-af6e-0bba3de412f0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ThirdParty\ThirdParty.vcxproj">
+      <Project>{23ca2c0f-ce2b-41d7-852e-20818a199273}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

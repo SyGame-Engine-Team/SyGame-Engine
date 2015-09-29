@@ -1,0 +1,74 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : EntryPoint/SimpleRPG/Interface/StatusEffectBar.h
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : SimpleRPG, Interface : StatusEffectBar
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None.
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header prelude
+#ifndef SCARAB_ENTRYPOINT_SIMPLERPG_INTERFACE_STATUSEFFECTBAR_H
+#define SCARAB_ENTRYPOINT_SIMPLERPG_INTERFACE_STATUSEFFECTBAR_H
+
+/////////////////////////////////////////////////////////////////////////////////
+// Includes
+#include "../Gameplay/Character.h"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Constants definitions
+
+/////////////////////////////////////////////////////////////////////////////////
+// The StatusEffectBarModel class
+class StatusEffectBarModel : public GUIWidgetModel
+{
+public:
+    StatusEffectBarModel( BaseCharacter * pCharacter );
+    virtual ~StatusEffectBarModel();
+
+    // Model
+    inline Void EnumStatusEffects() const;
+    inline StatusEffectID EnumNextStatusEffect() const;
+
+    inline Void EnumStatusEffectInstances() const;
+    inline StatusEffectInstance * EnumNextStatusEffectInstance() const;
+
+    // Controller
+    virtual Void OnClick( const Point2 & ptLocalPos, KeyCode iKey, GUIEventFlag iFlags );
+
+protected:
+    BaseCharacter * m_pCharacter;
+};
+
+/////////////////////////////////////////////////////////////////////////////////
+// The StatusEffectBar class
+class StatusEffectBar : public GUIWidget
+{
+public:
+    StatusEffectBar( StatusEffectBarModel * pModel, GUIWidget * pParent, const GUILayout & guiLayout, const GChar * strName );
+    virtual ~StatusEffectBar();
+
+protected:
+    // Drawing interface
+    virtual Void _Draw( const Rectangle2 & rectClient );
+};
+
+/////////////////////////////////////////////////////////////////////////////////
+// Backward Includes (Inlines & Templates)
+#include "StatusEffectBar.inl"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header end
+#endif // SCARAB_ENTRYPOINT_SIMPLERPG_INTERFACE_STATUSEFFECTBAR_H
+

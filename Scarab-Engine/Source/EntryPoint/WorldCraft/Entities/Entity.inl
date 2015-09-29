@@ -1,0 +1,40 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : EntryPoint/WorldCraft/Entities/Entity.inl
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : WorldCraft, Entities : Entity
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None.
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Entity implementation
+inline const Vertex3 & Entity::GetPosition() const {
+    return WorldBV.GetCenter();
+}
+
+inline Void Entity::SetVisible( Bool bVisible ) {
+    if ( bVisible )
+        CullMode = WORLD_CULL_DYNAMIC;
+    else
+        CullMode = WORLD_CULL_ALLWAYS;
+}
+
+inline Scalar Entity::GetDistance( Entity * pEntity ) const {
+    Vector3 vW = ( pEntity->GetPosition() - GetPosition() );
+    return vW.Norm();
+}
+inline Scalar Entity::GetDistanceSqr( Entity * pEntity ) const {
+    Vector3 vW = ( pEntity->GetPosition() - GetPosition() );
+    return vW.NormSqr();
+}

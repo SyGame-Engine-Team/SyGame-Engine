@@ -1,0 +1,38 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Engine/Rendering/Resources/GPUDeferredContext.inl
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : GPU Resource : Deferred Rendering (Command lists)
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None.
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// GPUDeferredContext implementation
+inline Bool GPUDeferredContext::IsBound() const {
+    return m_hDeviceDeferredContext.IsCreated();
+}
+
+inline Void GPUDeferredContext::MakeCommandList( GPUCommandList * outCommandList, Bool bRestoreState ) {
+    Assert( IsBound() );
+    m_hDeviceDeferredContext.MakeCommandList( outCommandList, bRestoreState );
+}
+
+inline Void GPUDeferredContext::Clear() {
+    Assert( IsBound() );
+    m_hDeviceDeferredContext.Clear();
+}
+inline Void GPUDeferredContext::Reset() {
+    Assert( IsBound() );
+    m_hDeviceDeferredContext.Reset();
+}

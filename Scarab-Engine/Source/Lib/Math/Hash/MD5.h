@@ -1,0 +1,69 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Lib/Math/Hash/MD5.h
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : Cryptographic-level MD5 algorithm ...
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : MD5 provide asymmetric encryption, I'll add some
+//              symmetric algorithm soon (DES, RC4, ...) and finally the famous
+//              RSA which will require big integers support ...
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header prelude
+#ifndef SCARAB_LIB_MATH_HASH_MD5_H
+#define SCARAB_LIB_MATH_HASH_MD5_H
+
+/////////////////////////////////////////////////////////////////////////////////
+// Includes
+#include "../../../ThirdParty/System/Platform.h"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Constants definitions
+typedef Byte HashMD5[16];
+
+/////////////////////////////////////////////////////////////////////////////////
+// The MD5Hasher class
+class MD5Hasher
+{
+public:
+	MD5Hasher();
+	~MD5Hasher();
+
+	inline Void Reset();
+	Void Update(const Void * pData, DWord Size);
+	Void GetHash(HashMD5 pOut);
+
+private:
+    Void _Initialize();
+	Void _MakePadding();
+	Void _Operation_F(DWord * pA, DWord B, DWord C, DWord D, DWord X, Byte Rot, Byte I);
+	Void _Operation_G(DWord * pA, DWord B, DWord C, DWord D, DWord X, Byte Rot, Byte I);
+	Void _Operation_H(DWord * pA, DWord B, DWord C, DWord D, DWord X, Byte Rot, Byte I);
+	Void _Operation_I(DWord * pA, DWord B, DWord C, DWord D, DWord X, Byte Rot, Byte I);
+	Void _MD5Transform();
+
+	Byte m_arrMsgBuffer[128];
+	DWord m_iMsgSize, m_iBlokCount;
+	DWord m_arrBlok[4];
+
+    static const DWord sm_arrSinTable[65];
+};
+
+/////////////////////////////////////////////////////////////////////////////////
+// Backward Includes (Inlines & Templates)
+#include "MD5.inl"
+
+/////////////////////////////////////////////////////////////////////////////////
+// Header end
+#endif // SCARAB_LIB_MATH_HASH_MD5_H

@@ -1,0 +1,56 @@
+/////////////////////////////////////////////////////////////////////////////////
+// File : Engine/Rendering/Resources/GPUDeferredContext.cpp
+/////////////////////////////////////////////////////////////////////////////////
+// Version : 1.0a
+// Began Code : 29/05/2010
+// Status : Alpha
+// Portability : Any
+/////////////////////////////////////////////////////////////////////////////////
+// Description : GPU Resource : Deferred Rendering (Command lists)
+/////////////////////////////////////////////////////////////////////////////////
+// Part of Scarab-Engine, licensed under the
+// Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+//   http://creativecommons.org/licenses/by-nc-nd/3.0/
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Known Bugs : None.
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Includes
+#include "GPUDeferredContext.h"
+
+#include "../RenderingManager.h"
+
+/////////////////////////////////////////////////////////////////////////////////
+// GPUDeferredContext implementation
+GPUDeferredContext::GPUDeferredContext():
+    m_hDeviceDeferredContext( RenderingFn->m_pDeviceRenderer )
+{
+    // nothing to do
+}
+GPUDeferredContext::~GPUDeferredContext()
+{
+    if ( IsBound() )
+        UnBind();
+}
+
+Void GPUDeferredContext::Bind()
+{
+    Assert( !(IsBound()) );
+
+    m_hDeviceDeferredContext.Create();
+
+    RenderingFn->_RegisterDeferredContext( this );
+}
+Void GPUDeferredContext::UnBind()
+{
+    Assert( IsBound() );
+
+    RenderingFn->_UnRegisterDeferredContext( this );
+
+    m_hDeviceDeferredContext.Destroy();
+}
+
+
